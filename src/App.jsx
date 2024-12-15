@@ -1,6 +1,7 @@
 import Card from "./components/cards";
 import Main from "./components/main";
 import Blok from "./components/nerabotayet";
+import Sms2 from "./components/sms";
 import Analyzing from "./components/sms";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
       </div>
       <Blok />
       <Analyzing />
+      <Sms2 />
     </div>
   )
 }
