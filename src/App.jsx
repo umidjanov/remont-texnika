@@ -1,7 +1,7 @@
 import Card from "./components/cards";
 import Main from "./components/main";
 import Blok from "./components/nerabotayet";
-import Sms2 from "./components/sms";
+import Sms2 from "./components/sms2"
 import Analyzing from "./components/sms";
 
 export default function App() {
