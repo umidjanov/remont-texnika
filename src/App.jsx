@@ -23,7 +23,6 @@ export default function App() {
       </div>
       <Blok />
       <Analyzing />
-      <Sms2 />
     </div>
   )
 }
