@@ -1,6 +1,6 @@
 function Blog() {
     return (
-        <div className="p-[30px] flex flex-col items-center gap-[20px]">
+        <div className="p-[30px] b-[30px] flex flex-col items-center gap-[20px]">
             <h1 className="lg:text-[38px] md:text-[28px] text-[28px] lg:w-[900px] w-[300px] text-center text-[#E7742E]">ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К НАМ</h1>
             <div className="flex gap-[25px] items-center text-center">
                 <div className="lg:flex hidden w-[300px] border-[1px] border-gray-400 h-0"></div>
