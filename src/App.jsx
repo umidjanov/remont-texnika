@@ -3,6 +3,7 @@ import Main from "./components/main";
 import Blok from "./components/nerabotayet";
 import Sms2 from "./components/sms2"
 import Analyzing from "./components/sms";
+import Blog from "./components/blog";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Blok />
       <Analyzing />
       <Sms2 />
+      <Blog />
     </div>
   )
 }
