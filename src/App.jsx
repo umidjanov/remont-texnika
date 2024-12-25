@@ -4,6 +4,7 @@ import Blok from "./components/nerabotayet";
 import Sms2 from "./components/sms2"
 import Analyzing from "./components/sms";
 import Blog from "./components/blog";
+import Block3 from "./components/itvizKlient";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <Analyzing />
       <Sms2 />
       <Blog />
+      <Block3 />
     </div>
   )
 }
