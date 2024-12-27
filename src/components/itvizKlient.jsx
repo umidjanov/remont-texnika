@@ -14,7 +14,10 @@ function Block3() {
         <div className="lg:flex hidden border-[1px] border-[#ffffff] lg:w-[520px] w-[300px]"></div>
       </div>
       <div>
-        <a className="flex lg:gap-[70px] gap-[40px] flex-wrap justify-center lg:px-[30px]]" href="https://wdomain.ru/remont-geko.ru">
+        <a
+          className="flex lg:flex lg:gap-[45px] gap-[40px] flex-wrap "
+          href="https://wdomain.ru/remont-geko.ru"
+        >
           <Button
             className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] lg:h-[450px] h-[400px] p-[20px] bg-white text-[#0d133a] rounded-md"
             href="https://wdomain.ru/remont-geko.ru"
