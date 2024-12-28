@@ -5,6 +5,7 @@ import Sms2 from "./components/sms2"
 import Analyzing from "./components/sms";
 import Blog from "./components/blog";
 import Block3 from "./components/itvizKlient";
+import Kontakts from "./components/kontakts";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
       <Sms2 />
       <Blog />
       <Block3 />
+      <Kontakts />
     </div>
   )
 }
