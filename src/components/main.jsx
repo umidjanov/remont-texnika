@@ -37,7 +37,7 @@ export default function Mail() {
                     src="public/Top-arrow-right.png"
                     alt=""
                   />
-                  <h1 className="lg-text-[30px] md:text-[16px]">
+                  <h1 className="lg:text-[25px] md:text-[16px]">
                     +998 135-45-47
                   </h1>
                   <img
