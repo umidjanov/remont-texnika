@@ -69,8 +69,8 @@ function Information() {
           компании Geko гарантирует быстрое решение проблем!
         </h1>
       </div>
-      <Button className="flex items-center justify-center w-[300px] h-[48px] rounded-lg bg-[#E7742E] text-[20px] vont-[500]">
-        получить консультацию
+      <Button className="flex items-center justify-center w-[300px] h-[48px] rounded-lg bg-[#E7742E] lg:text-[16px] vont-[500]">
+        получить   консультацию
       </Button>
     </div>
   );
