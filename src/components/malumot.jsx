@@ -1,3 +1,5 @@
+import { Button } from "@material-tailwind/react";
+
 function Information() {
   return (
     <div className="p-[30px] flex flex-col gap-[40px] items-center">
@@ -67,9 +69,9 @@ function Information() {
           компании Geko гарантирует быстрое решение проблем!
         </h1>
       </div>
-      <button className="flex items-center justify-center w-[300px] h-[48px] rounded-lg bg-[#E7742E] text-[20px] vont-[500]">
+      <Button className="flex items-center justify-center w-[300px] h-[48px] rounded-lg bg-[#E7742E] text-[20px] vont-[500]">
         получить консультацию
-      </button>
+      </Button>
     </div>
   );
 }
