@@ -15,7 +15,7 @@ function Block3() {
       </div>
       <div>
         <a
-          className="flex lg:flex lg:gap-[45px] gap-[40px] flex-wrap "
+          className="flex lg:flex lg:gap-[45px] gap-[40px] flex-wrap justify-center"
           href="https://wdomain.ru/remont-geko.ru"
         >
           <Button
