@@ -3,11 +3,7 @@ function Jaloba() {
     <div className="bg-[#0B1427] p-[50px] flex items-center flex-col text-white gap-[30px]">
       <div className="lg:flex border-[1px] border-[#E7742E] lg:w-[1000px] w-[300px] md:w-[450px]"></div>
       <div className="lg:flex gap-[40px] lg:w-[1000px] lg:items-center">
-        <img
-          className="lg:flex hidden"
-          src="public/Group 77.png"
-          alt=""
-        />
+        <img className="lg:flex hidden" src="public/Group 77.png" alt="" />
         {/* <div className="lg:hidden flex items-center">
           <div className="lg:hidden flex border-[1px] border-[#E7742E] lg:w-[1000px] w-[160px] h-0 md:w-[300px]"></div>
           <img src="public/Icon102x96_desktop/Group 77.png" alt="" />

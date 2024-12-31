@@ -17,34 +17,34 @@ function Kontakts() {
       <div className="lg:flex gap-[50px] flex-wrap flex justify-center">
         <div class="relative flex flex-col my-3 bg-white shadow-sm border border-slate-200 hover:border-slate-300 hover:shadow-md rounded-lg transition-all cursor-pointer lg:w-96 md:w-[380px] items-center text-center">
           <div class="p-4">
-          <img src="public/Photo.png" alt="" />
+            <img src="public/Photo.png" alt="" />
             <h5 class="mb-2 text-slate-800 text-xl font-semibold">
-            Сергей Александров
+              Сергей Александров
             </h5>
             <p class="text-slate-600 leading-normal font-light">
-            Опыт работы – 10 лет
+              Опыт работы – 10 лет
             </p>
           </div>
         </div>
         <div class="relative flex flex-col my-3 bg-white shadow-sm border border-slate-200 hover:border-slate-300 hover:shadow-md rounded-lg transition-all cursor-pointer lg:w-96 md:w-[380px] items-center text-center">
           <div class="p-4">
-          <img src="public/Photo.png" alt="" />
+            <img src="public/Photo.png" alt="" />
             <h5 class="mb-2 text-slate-800 text-xl font-semibold">
-            Сергей Александров
+              Сергей Александров
             </h5>
             <p class="text-slate-600 leading-normal font-light">
-            Опыт работы – 10 лет
+              Опыт работы – 10 лет
             </p>
           </div>
         </div>
         <div class="relative flex flex-col my-3 bg-white shadow-sm border border-slate-200 hover:border-slate-300 hover:shadow-md rounded-lg transition-all cursor-pointer lg:w-96 md:w-[380px] items-center text-center">
           <div class="p-4">
-          <img src="public/Photo.png" alt="" />
+            <img src="public/Photo.png" alt="" />
             <h5 class="mb-2 text-slate-800 text-xl font-semibold">
-            Сергей Александров
+              Сергей Александров
             </h5>
             <p class="text-slate-600 leading-normal font-light">
-            Опыт работы – 10 лет
+              Опыт работы – 10 лет
             </p>
           </div>
         </div>

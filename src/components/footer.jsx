@@ -52,9 +52,21 @@ function Footer() {
             <a href="https://99evro.ru/">10:00 - 20:00 (без выходных)</a>
           </ul>
           <div className="lg:flex md:flex hidden gap-[20px]">
-            <img className="cursor-pointer" src="public/Instagram copy.png" alt="" />
-            <img className="cursor-pointer" src="public/Whatsapp copy.png" alt="" />
-            <img className="cursor-pointer" src="public/Telegram copy.png" alt="" />
+            <img
+              className="cursor-pointer"
+              src="public/Instagram copy.png"
+              alt=""
+            />
+            <img
+              className="cursor-pointer"
+              src="public/Whatsapp copy.png"
+              alt=""
+            />
+            <img
+              className="cursor-pointer"
+              src="public/Telegram copy.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -72,7 +84,10 @@ function Footer() {
               Карта сайта
             </a>
             <div className="lg:flex hidden h-[20px] border-[2px] border-[#E7742E]"></div>
-            <a className="lg:flex md:flex hidden" href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063">
+            <a
+              className="lg:flex md:flex hidden"
+              href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063"
+            >
               Политика конфиденциальности
             </a>
           </div>

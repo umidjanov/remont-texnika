@@ -70,7 +70,7 @@ function Information() {
         </h1>
       </div>
       <Button className="flex items-center justify-center w-[300px] h-[48px] rounded-lg bg-[#E7742E] lg:text-[16px] vont-[500]">
-        получить   консультацию
+        получить консультацию
       </Button>
     </div>
   );
