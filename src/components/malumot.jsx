@@ -1,7 +1,7 @@
 function Information() {
   return (
     <div className="p-[30px] flex flex-col gap-[40px] items-center">
-      <h1 className="text-[50px] text-[#E7742E]">
+      <h1 className="lg:text-[50px] md:text-[38px] text-[20px] text-center text-[#E7742E]">
         Когда нужно вызвать мастера
       </h1>
       <div className="lg:w-[1000px] flex flex-col gap-[30px]">
