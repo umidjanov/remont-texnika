@@ -5,7 +5,7 @@ function Jaloba() {
       <div className="lg:flex gap-[40px] lg:w-[1000px] lg:items-center">
         <img
           className="lg:flex hidden"
-          src="public/Icon102x96_desktop/Group 77.png"
+          src="public/Group 77.png"
           alt=""
         />
         <div className="lg:hidden flex items-center">
