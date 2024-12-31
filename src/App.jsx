@@ -8,6 +8,7 @@ import Block3 from "./components/itvizKlient";
 import Kontakts from "./components/kontakts";
 import Jaloba from "./components";
 import Information from "./components/malumot";
+import Footer from "./components/index copy";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
       <Kontakts />
       <Jaloba />
       <Information />
+      <Footer />
     </div>
   );
 }

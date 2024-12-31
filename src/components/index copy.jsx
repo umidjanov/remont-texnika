@@ -3,7 +3,7 @@ function Footer() {
     <div className="bg-[#0B1427] text-white p-[40px] items-center flex flex-col gap-[40px]">
       <div className="flex gap-[100px]">
         <div className="lg:w-[300px] lg:flex hidden flex-col gap-[50px]">
-          <img src="public/white.svg" alt="" />
+          <img src="public/white.png" alt="" />
           <a
             href="https://www.rusprofile.ru/ip/320623400028827"
             className="w-[150px] text-[18px]"
@@ -18,7 +18,7 @@ function Footer() {
           </h1>
         </div>
         <div>
-          <ul className="flex flex-col gap-[20px] text-[20px] font-[500] cursor-pointer">
+          <ul className="flex flex-col gap-[20px] lg:text-[20px] font-[500] cursor-pointer">
             <a href="Main">Главная</a>
             <li>О компании</li>
             <li>прайс-лист</li>
@@ -51,7 +51,7 @@ function Footer() {
             <a href="https://wdomain.ru/remont-geko.ru">info@remont-geko.ru</a>
             <a href="https://99evro.ru/">10:00 - 20:00 (без выходных)</a>
           </ul>
-          <div className="flex gap-[20px]">
+          <div className="lg:flex md:flex hidden gap-[20px]">
             <img className="cursor-pointer" src="public/Instagram copy.png" alt="" />
             <img className="cursor-pointer" src="public/Whatsapp copy.png" alt="" />
             <img className="cursor-pointer" src="public/Telegram copy.png" alt="" />
@@ -72,7 +72,7 @@ function Footer() {
               Карта сайта
             </a>
             <div className="lg:flex hidden h-[20px] border-[2px] border-[#E7742E]"></div>
-            <a href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063">
+            <a className="lg:flex md:flex hidden" href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063">
               Политика конфиденциальности
             </a>
           </div>
