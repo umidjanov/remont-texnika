@@ -52,9 +52,9 @@ function Footer() {
             <a href="https://99evro.ru/">10:00 - 20:00 (без выходных)</a>
           </ul>
           <div className="flex gap-[20px]">
-            <img className="cursor-pointer" src="public/Instagram.png" alt="" />
-            <img className="cursor-pointer" src="public/Whatsapp.png" alt="" />
-            <img className="cursor-pointer" src="public/Telegram.png" alt="" />
+            <img className="cursor-pointer" src="public/Instagram copy.png" alt="" />
+            <img className="cursor-pointer" src="public/Whatsapp copy.png" alt="" />
+            <img className="cursor-pointer" src="public/Telegram copy.png" alt="" />
           </div>
         </div>
       </div>
