@@ -6,6 +6,7 @@ import Analyzing from "./components/sms";
 import Blog from "./components/blog";
 import Block3 from "./components/itvizKlient";
 import Kontakts from "./components/kontakts";
+import Jaloba from "./components";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
       <Blog />
       <Block3 />
       <Kontakts />
+      <Jaloba />
     </div>
   )
 }
