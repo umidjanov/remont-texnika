@@ -8,7 +8,7 @@ import Block3 from "./components/itvizKlient";
 import Kontakts from "./components/kontakts";
 import Jaloba from "./components";
 import Information from "./components/malumot";
-import Footer from "./components/index copy";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
