@@ -1,4 +1,4 @@
-function Sms2() {
+function Jaloba() {
   return (
     <div className="bg-[#0B1427] p-[50px] flex items-center flex-col text-white gap-[30px]">
       <div className="lg:flex hidden border-[1px] border-[#E7742E] lg:w-[1000px] w-[300px]"></div>
@@ -26,4 +26,4 @@ function Sms2() {
   );
 }
 
-export default Sms2;
+export default Jaloba;
