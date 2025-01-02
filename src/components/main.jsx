@@ -111,7 +111,7 @@ export default function Mail() {
             </div>
             <div className="flex flex-col lg:gap-[25px] md:gap-[20px] lg:w-[300px] md:w-[250px] items-start">
               <h1 className="lg:text-[40px] md:text-[18px] font-[500] text-[#E7742E]">
-                ОПЕРАТИВНАЯ КОМПЬЮТЕРНАЯ ПОМОЩЬ{" "}
+                ОПЕРАТИВНАЯ КОМПЬЮТЕРНАЯ ПОМОЩЬ
               </h1>
               <h1 className="lg:text-[20px] md:text-[15px] font-[500] md:w-[300px] lg:w-[460px]">
                 Ремонт любой сложности ПК, ноутбуков и техники Apple для дома и
