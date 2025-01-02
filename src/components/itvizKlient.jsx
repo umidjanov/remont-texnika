@@ -11,7 +11,7 @@ function Block3() {
           </h1>
           <div className="lg:flex hidden text-center items-center justify-center w-[50px] h-[50px] rounded-full border-[2px] bordder-white hover:border-[#E7742E]"></div>
         </div>
-        <div className="lg:flex hidden border-[1px] border-[#ffffff] lg:w-[520px] w-[300px]"></div>
+        <div className="lg:flex hidden border-[1px] border-[#ffffff] lg:w-[560px] w-[300px]"></div>
       </div>
       <div>
         <a
@@ -19,7 +19,7 @@ function Block3() {
           href="https://wdomain.ru/remont-geko.ru"
         >
           <Button
-            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] lg:h-[450px] h-[400px] p-[20px] bg-white text-[#0d133a] rounded-md"
+            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] lg:h-[450px] h-[400px] p-[20px] bg-white text-[#0d133a] rounded-md hover:shadow-1 hover:shadow-gray-500"
             href="https://wdomain.ru/remont-geko.ru"
           >
             <div className="flex items-center gap-[20px]">
@@ -45,7 +45,7 @@ function Block3() {
             </h1>
           </Button>
           <Button
-            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] h-[450px] p-[20px] bg-white text-[#0d133a] rounded-md"
+            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] h-[450px] p-[20px] bg-white text-[#0d133a] rounded-md hover:shadow-1 hover:shadow-gray-500"
             href="https://wdomain.ru/remont-geko.ru"
           >
             <div className="flex items-center gap-[20px]">
@@ -70,7 +70,7 @@ function Block3() {
             </h1>
           </Button>
           <Button
-            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] h-[450px] p-[20px] bg-white text-[#0d133a] rounded-md"
+            className="cursor-pointer flex flex-col gap-[20px] lg:w-[330px] md:w-[500px] h-[450px] p-[20px] bg-white text-[#0d133a] rounded-md hover:shadow-1 hover:shadow-gray-500"
             href="https://wdomain.ru/remont-geko.ru"
           >
             <div className="flex items-center gap-[20px]">
