@@ -120,8 +120,6 @@ export default function NavbarDefault() {
   );
 
   return (
-    <>
-      <NavbarDefault />
       <Navbar
         style={{ background: "#0B1427" }}
         className="mx-start max-w-[250px] border-[#0B1427] backdrop-blur-none rounded-none px-4 lg:px-8 lg:py-4 h-[100vh] bg-[#0B1427]"
@@ -190,6 +188,5 @@ export default function NavbarDefault() {
           </div>
         </MobileNav>
       </Navbar>
-    </>
   );
 }
