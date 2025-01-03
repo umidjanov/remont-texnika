@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input, button{
+    border: 2px solid teal;
+    padding: 10px;
+}
