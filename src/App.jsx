@@ -1,41 +1,21 @@
-import Card from "./components/cards";
-import Main from "./components/main";
-import Blok from "./components/nerabotayet";
-import Sms2 from "./components/sms2";
-import Analyzing from "./components/sms";
-import Blog from "./components/blog";
-import Block3 from "./components/itvizKlient";
-import Kontakts from "./components/kontakts";
-import Jaloba from "./components";
-import Information from "./components/malumot";
-import Footer from "./components/footer";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AdminHome from "./pages/admin/pages/home";
+import Create from "./pages/admin/pages/create";
+import News from "./pages/admin/pages/news";
+import Update from "./pages/admin/pages/update";
 
 export default function App() {
   return (
-    <div>
-      <Main />
-      <div className="flex flex-wrap gap-[40px] justify-center lg:mt-[250px] mb-[100px] lg:mx-[200px]">
-        <div className="flex flex-wrap lg:mt-[500px] md:mt-[400px] mt-[500px] gap-[50px] justify-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </div>
-      <Blok />
-      <Analyzing />
-      <Sms2 />
-      <Blog />
-      <Block3 />
-      <Kontakts />
-      <Jaloba />
-      <Information />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/admin/create" element={<Create />} />
+        <Route path="/admin/news" element={<News />} />
+        <Route path="/admin/update" element={<Update />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

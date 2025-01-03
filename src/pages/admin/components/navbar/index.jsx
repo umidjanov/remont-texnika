@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-export function NavbarDefault() {
+export default function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
