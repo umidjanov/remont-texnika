@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="bg-[#0B1427] text-white p-[40px] items-center flex flex-col gap-[40px]">
-      <div className="flex gap-[100px]">
+      <div className="flex lg:gap-[100px] gap-[30px]">
         <div className="lg:w-[300px] lg:flex hidden flex-col gap-[50px]">
           <img src="public/white.png" alt="" />
           <a
@@ -18,7 +18,7 @@ function Footer() {
           </h1>
         </div>
         <div>
-          <ul className="flex flex-col gap-[20px] lg:text-[20px] font-[500] cursor-pointer">
+          <ul className="flex flex-col gap-[20px] lg:text-[20px] text-[10px] font-[500] cursor-pointer">
             <a href="Main">Главная</a>
             <li>О компании</li>
             <li>прайс-лист</li>
