@@ -2,10 +2,10 @@ import { useState } from "react";
 import { instance } from "../../utils/axios";
 import { useNavigate } from "react-router-dom";
 import { Input } from "@material-tailwind/react";
-// import NavbarDefault from "../../components/navbar";
+import NavbarDefault from "../../components/navbar";
 
 export default function Create() {
-  // <NavbarDefault />;
+  <NavbarDefault />;
   const [name, setName] = useState("");
   const [createAt, setCreateAt] = useState("");
   const [avatar, setAvatar] = useState("");
