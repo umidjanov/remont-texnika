@@ -14,7 +14,7 @@ export default function CreateBlog() {
     e.preventDefault();
     instance
       .post("/product", { name, createAt, avatar })
-      .then(() => console.log(title, desc, img), nav("/news"));
+      .then(() => console.log(title, desc, img), nav("/admin/newsBlock"));
   };
 
   return (
