@@ -55,12 +55,12 @@ export default function News() {
                 {/* <h2>ID: {product?.id}</h2> */}
                 <div className="flex flex-col gap-4 ">
                   <Link to={`/admin/news/${product?.id}`}>
-                    <Button className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]">
+                    <Button className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]  p-[10px]">
                       update
                     </Button>
                   </Link>
                   <Button
-                    className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]"
+                    className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]  p-[10px]"
                     onClick={() => deleted(product?.id)}
                   >
                     delete
