@@ -91,10 +91,10 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <Link to={"create"}>
-          <a href="#" className="flex items-center">
+        <Link to={"/admin/block"}>
+          {/* <a href="#" className="flex items-center"> */}
             Create Blog
-          </a>
+          {/* </a> */}
         </Link>
       </Typography>
       <Typography
