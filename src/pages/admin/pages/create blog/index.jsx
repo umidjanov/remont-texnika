@@ -3,7 +3,7 @@ import { instance } from "../../utils/axios";
 import { useNavigate } from "react-router-dom";
 import { Input } from "@material-tailwind/react";
 
-export default function Create() {
+export default function CreateBlog() {
   const [name, setName] = useState("");
   const [createAt, setCreateAt] = useState("");
   const [avatar, setAvatar] = useState("");
@@ -18,9 +18,9 @@ export default function Create() {
 
   return (
     <div className="bg-blue-gray-100 ml-[-120px] w-[100%]">
-      <div className="pl-[30px] bg-[#0B1427] text-white uppercase">
-        <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold pl-[80px]">
-          this is Create page
+      <div className="pl-[40px] bg-[#0B1427] text-white uppercase">
+        <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold">
+          this is Blog create page
         </h1>
       </div>
 

@@ -28,14 +28,12 @@ export default function News() {
 
   return (
     <div className="bg-blue-gray-100 ml-[-120px] w-[100%]">
-      <div className="pl-[40px] bg-[#0B1427] text-white uppercase">
-          <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold">
-            this is News page
-          </h1>
-        </div>
+      <div className="pl-[30px] bg-[#0B1427] text-white uppercase">
+        <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold pl-[80px]">
+          this is News page
+        </h1>
+      </div>
       <div className="flex items-center justify-center flex-col gap-[20px] p-[30px]">
-        
-
         <div className="flex gap-[20px]">
           {products?.map((product) => (
             <div
