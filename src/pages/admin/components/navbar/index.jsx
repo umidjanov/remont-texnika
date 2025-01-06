@@ -140,9 +140,11 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
+        <Link to={"/admin/blocks"}>
+          <a href="#" className="flex items-center">
+            Blocks
+          </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
