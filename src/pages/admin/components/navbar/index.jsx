@@ -39,7 +39,7 @@ export default function NavbarDefault() {
           />
         </svg>
 
-        <Link to={"/news"}>
+        <Link to={"news"}>
           <a href="#" className="flex items-center">
             News
           </a>

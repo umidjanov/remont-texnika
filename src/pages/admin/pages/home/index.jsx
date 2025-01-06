@@ -1,7 +1,10 @@
+import NavbarDefault from "../../components/navbar";
+
 export default function Home() {
     return(
-        <div>
-            <h1>this is Home page</h1>
+        <div className="flex">
+            <NavbarDefault />
+            <h1 className="m-[100px]">this is Home page</h1>
         </div>
     )
 }
