@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-export function NavbarDefault() {
+export default function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -92,9 +92,9 @@ export function NavbarDefault() {
           />
         </svg>
         <Link to={"create"}>
-          {/* <a href="#" className="flex items-center"> */}
+          <a href="#" className="flex items-center">
             Create Blog
-          {/* </a> */}
+          </a>
         </Link>
       </Typography>
       <Typography
