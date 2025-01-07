@@ -27,10 +27,10 @@ export default function Update() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] flex ml-[100px]">
+    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
       <NavbarDefault />
-      <div>
-        <div className="pl-[40px] bg-[#0B1427] text-white uppercase w-[1286]">
+      <div className="pl-[250px]">
+        <div className="pl-[40px] bg-[#050b1aef] text-white uppercase w-[1286px]">
           <h1 className="pt-6 border-1  p-3 w-full font-bold">
             this is Update page
           </h1>

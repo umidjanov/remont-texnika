@@ -39,11 +39,7 @@ export default function NavbarDefault() {
           />
         </svg>
 
-        <Link to={"news"}>
-          <a href="#" className="flex items-center">
-            News
-          </a>
-        </Link>
+        <Link to={"/admin/news"}>News</Link>
       </Typography>
       <Typography
         as="li"
@@ -65,11 +61,7 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <Link to={"create"}>
-          <a href="#" className="flex items-center">
-            Create
-          </a>
-        </Link>
+        <Link to={"/admin/create"}>Create</Link>
       </Typography>
       <Typography
         as="li"
@@ -91,11 +83,7 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <Link to={"/admin/block"}>
-          {/* <a href="#" className="flex items-center"> */}
-          Create Blog
-          {/* </a> */}
-        </Link>
+        <Link to={"/admin/block"}>Create Blog</Link>
       </Typography>
       <Typography
         as="li"
@@ -116,11 +104,7 @@ export default function NavbarDefault() {
           />
         </svg>
 
-        <Link to={"/admin/newsBlock"}>
-          <a href="#" className="flex items-center">
-            News block
-          </a>
-        </Link>
+        <Link to={"/admin/newsBlock"}>News block</Link>
       </Typography>
       <Typography
         as="li"
@@ -140,11 +124,7 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <Link to={"/admin/blocks"}>
-          <a href="#" className="flex items-center">
-            Blocks
-          </a>
-        </Link>
+        <Link to={"/admin/blocks"}>Blocks</Link>
       </Typography>
       <Typography
         as="li"
@@ -166,9 +146,7 @@ export default function NavbarDefault() {
             fill="white"
           />
         </svg>
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
+        <Link to={"/admin/docs"}>Docs</Link>
       </Typography>
     </ul>
   );
