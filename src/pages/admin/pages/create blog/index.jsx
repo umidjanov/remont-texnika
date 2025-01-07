@@ -58,7 +58,7 @@ export default function CreateBlog() {
                 type="text"
                 label="img"
               />
-              <button className="bg-[#E7742E] rounded-lg px-[19px] text-black border-[#E7742E]">
+              <button className="bg-[#E7742E] rounded-lg px-[21px] py-[6px] text-black border-[#E7742E]">
                 create
               </button>
             </form>
