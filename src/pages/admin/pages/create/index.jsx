@@ -18,10 +18,10 @@ export default function Create() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] flex">
+    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
       <NavbarDefault />
-      <div>
-        <div className="bg-[#0B1427] text-white uppercase w-[1286px]">
+      <div className="ml-[250px]">
+        <div className="bg-[#050b1aef] text-white uppercase w-[1286px]">
           <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold pl-[80px]">
             this is Create page
           </h1>

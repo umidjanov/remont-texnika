@@ -30,9 +30,9 @@ export default function News() {
   return (
     <div className="bg-blue-gray-100 w-[100%] flex">
       <NavbarDefault />
-      <div className="flex flex-col ml-[233px]">
-        <div className="bg-[#0B1427] text-white uppercase w-[1286px] fixed">
-          <h1 className="pt-6 border-l ml-[17px] p-3 w-full font-bold pl-[80px]">
+      <div className="flex flex-col ml-[250px]">
+        <div className="bg-[#050b1aef] text-white uppercase w-[1286px] fixed">
+          <h1 className="pt-6 ml-[17px] p-3 w-full font-bold pl-[80px]">
             this is News page
           </h1>
         </div>

@@ -18,10 +18,10 @@ export default function CreateBlog() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] flex">
+    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
       <NavbarDefault />
-      <div>
-        <div className="pl-[40px] bg-[#0B1427] text-white uppercase">
+      <div className="ml-[250px]">
+        <div className="pl-[40px] bg-[#050b1aef] text-white uppercase">
           <h1 className="pt-6 p-3 w-[1246px] font-bold">
             this is create Blog page
           </h1>
