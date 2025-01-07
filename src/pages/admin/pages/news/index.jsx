@@ -37,7 +37,7 @@ export default function News() {
           </h1>
         </div>
         <div className="flex items-center justify-center flex-col gap-[20px] p-[30px] flex-wrap mt-[80px]">
-          <div className="flex gap-[40px] px-[53px] flex-wrap">
+          <div className="flex gap-[40px] px-[44px] flex-wrap">
             {products?.map((product) => (
               <div
                 key={product?.id}
