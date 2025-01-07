@@ -19,12 +19,12 @@ export default function NavbarDefault() {
   }, []);
 
   const navList = (
-    <ul className="mt-2  mx-5 mb-4 w-[140px] flex flex-col gap-2 lg:mb-0 lg:mt-0  lg:items-center lg:gap-6">
+    <ul className="mx-5 pt-4 w-[140px] flex flex-col gap-[25px] mb-0 items-center justify-center">
       <Typography
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md  w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -45,7 +45,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E]  hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -67,7 +67,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E]  hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md  w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -89,7 +89,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md  w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -110,7 +110,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427]  hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427]  hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md  w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -130,7 +130,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="black"
-        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md p-2"
+        className="flex items-center gap-x-2 font-medium text-white border-[1px] bg-[#0B1427] hover:bg-[#E7742E] hover:border-[#E7742E] rounded-md w-[140px] h-[40px] px-2"
       >
         <svg
           width="40"
@@ -157,7 +157,7 @@ export default function NavbarDefault() {
       className="mx-start fixed max-w-[250px] border-[#0B1427] backdrop-blur-none rounded-none px-4 lg:px-8 lg:py-4 h-[100vh] bg-[#0B1427]"
     >
       <div className="container flex flex-col gap-[20px] text-center">
-        <Link to={"/"}>
+        <Link to={"/admin"}>
           <Typography
             as="a"
             href="#"
