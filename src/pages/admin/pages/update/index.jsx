@@ -27,7 +27,7 @@ export default function Update() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] flex">
+    <div className="bg-blue-gray-100 w-[100%] flex ml-[100px]">
       <NavbarDefault />
       <div>
         <div className="pl-[40px] bg-[#0B1427] text-white uppercase w-[1286]">
