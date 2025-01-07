@@ -7,7 +7,9 @@ import News from "./pages/admin/pages/news";
 import Update from "./pages/admin/pages/update";
 import NavbarDefault from "./pages/admin/components/navbar/index";
 import CreateBlog from "./pages/admin/pages/create blog";
-import NewsBlock from "./pages/admin/pages/news block";
+import NewsBlog from "./pages/admin/pages/news blog";
+import Blocs from "./pages/admin/pages/blocs/blocs";
+import Docs from "./pages/admin/pages/docs/docs";
 
 export default function App() {
   return (
@@ -18,7 +20,9 @@ export default function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/admin/create" element={<Create />} />
         <Route path="/admin/block" element={<CreateBlog />} />
-        <Route path="/admin/newsBlock" element={<NewsBlock />}/>
+        <Route path="/admin/newsBlock" element={<NewsBlog />} />
+        <Route path="/admin/blocks" element={<Blocs />} />
+        <Route path="/admin/docs" element={<Docs />} />
         <Route path="/admin/news" element={<News />} />
         <Route path="/admin/news/:id" element={<Update />} />
       </Routes>

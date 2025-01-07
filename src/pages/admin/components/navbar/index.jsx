@@ -104,7 +104,7 @@ export default function NavbarDefault() {
           />
         </svg>
 
-        <Link to={"/admin/newsBlock"}>News block</Link>
+        <Link to={"/admin/newsBlock"}>News blog</Link>
       </Typography>
       <Typography
         as="li"

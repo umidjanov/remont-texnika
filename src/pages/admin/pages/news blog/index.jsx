@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 import NavbarDefault from "../../components/navbar";
 
-export default function News() {
+export default function NewsBlog() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function News() {
       <div className="flex flex-col ml-[250px]">
         <div className="bg-[#050b1aef] text-white uppercase w-[1269px] fixed">
           <h1 className="pt-6 ml-[20px] p-3 w-full font-bold pl-[80px]">
-            this is News block page
+            this is News blog page
           </h1>
         </div>
         <div className="flex items-center justify-center flex-col gap-[20px] p-[30px]">
