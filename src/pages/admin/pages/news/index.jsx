@@ -30,14 +30,14 @@ export default function News() {
   return (
     <div className="bg-blue-gray-100 w-[100%] flex">
       <NavbarDefault />
-      <div className="flex flex-col">
-        <div className="bg-[#0B1427] text-white uppercase w-[1286px]">
+      <div className="flex flex-col  ml-[250px]">
+        <div className="bg-[#0B1427] text-white uppercase w-[1269px]">
           <h1 className="pt-6 border-l ml-[-20px] p-3 w-full font-bold pl-[80px]">
             this is News page
           </h1>
         </div>
         <div className="flex items-center justify-center flex-col gap-[20px] p-[30px]">
-          <div className="flex gap-[20px]">
+          <div className="flex gap-[40px] px-[40px] flex-wrap">
             {products?.map((product) => (
               <div
                 key={product?.id}

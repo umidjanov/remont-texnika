@@ -19,7 +19,7 @@ export default function NavbarDefault() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mx-5 mb-4 w-[140px] flex flex-col gap-2 lg:mb-0 lg:mt-0  lg:items-center lg:gap-6">
+    <ul className="mt-2  mx-5 mb-4 w-[140px] flex flex-col gap-2 lg:mb-0 lg:mt-0  lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -176,7 +176,7 @@ export default function NavbarDefault() {
   return (
     <Navbar
       style={{ background: "#0B1427" }}
-      className="mx-start max-w-[250px] border-[#0B1427] backdrop-blur-none rounded-none px-4 lg:px-8 lg:py-4 h-[100vh] bg-[#0B1427]"
+      className="mx-start fixed max-w-[250px] border-[#0B1427] backdrop-blur-none rounded-none px-4 lg:px-8 lg:py-4 h-[100vh] bg-[#0B1427]"
     >
       <div className="container flex flex-col gap-[20px] text-center">
         <Link to={"/"}>

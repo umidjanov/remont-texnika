@@ -62,7 +62,7 @@ export default function Update() {
                 type="text"
                 label="img"
               />
-              <button className="bg-[#E7742E] rounded-lg px-[19px] text-black border-[#E7742E]">
+              <button className="bg-[#E7742E] rounded-lg px-[19px] text-black border-[#E7742E] p-[8px]">
                 update
               </button>
             </form>
