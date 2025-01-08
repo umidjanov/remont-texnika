@@ -9,6 +9,7 @@ export default function Update() {
   const [name, setName] = useState("");
   const [createAt, setCreateAt] = useState("");
   const [avatar, setAvatar] = useState("");
+  const [btn, setBtn] = useState("")
   const nav = useNavigate();
 
   useEffect(() => {
@@ -16,18 +17,19 @@ export default function Update() {
       setName(res.data.name),
         setCreateAt(res.data.createAt),
         setAvatar(res.data.avatar);
+        setBtn(res.data.btn)
     });
   }, [id]);
 
   const update = (e) => {
     e.preventDefault();
-    instance.put(`/product/${id}`, { name, createAt, avatar }).then(() => {
+    instance.put(`/product/${id}`, { name, createAt, avatar, btn }).then(() => {
       nav("/admin/news");
     });
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
       <NavbarDefault />
       <div className="pl-[250px]">
         <div className="pl-[40px] bg-[#050b1aef] text-white uppercase w-[1286px]">
@@ -35,7 +37,7 @@ export default function Update() {
             this is Update page
           </h1>
         </div>
-        <div className="bg-white w-[1120px] mt-[60px] h-[380px] rounded-2xl ml-[90px] m-4">
+        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
           <div className=" pl-[200px] w-[1100px] pt-[80px]">
             <form
               onSubmit={(e) => update(e)}
@@ -61,6 +63,13 @@ export default function Update() {
                 onChange={(e) => setAvatar(e.target.value)}
                 type="text"
                 label="img"
+              />
+              <Input
+                className="h-[49px]"
+                value={btn}
+                onChange={(e) => setBtn(e.target.value)}
+                type="text"
+                label="btn"
               />
               <button className="bg-[#E7742E] rounded-lg px-[19px] text-black border-[#E7742E] p-[8px]">
                 update

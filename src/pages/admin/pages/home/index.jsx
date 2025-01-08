@@ -3,7 +3,7 @@ import NavbarDefault from "../../components/navbar";
 
 export default function Home() {
   return (
-    <div className="flex bg-blue-gray-100 w-[100%] h-[100vh]">
+    <div className="flex bg-blue-gray-900 w-[100%] h-[100vh]">
       <NavbarDefault />
       <div className="flex flex-col gap-[20px] pl-[250px]">
         <div className="pl-[40px] bg-[#050b1aef] text-white uppercase w-[1286] flex fixed">
