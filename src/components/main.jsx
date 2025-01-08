@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Blog3 from "./blog";
+
 export default function Mail() {
   return (
     <div>
@@ -99,9 +102,11 @@ export default function Mail() {
                     отзывы
                   </button>
                   <div className="border-[2px] border-[#E7742E] h-[20px] md:hidden lg:flex"></div>
-                  <button className="lg:text-[23px] md:text-[16px]">
-                    блог
-                  </button>
+                  <Link to={"/blog3"}>
+                    <button className="lg:text-[23px] md:text-[16px]">
+                      блог
+                    </button>
+                  </Link>
                   <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
                   <button className="lg:text-[23px] md:text-[16px]">
                     контакты

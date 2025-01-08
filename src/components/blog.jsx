@@ -1,4 +1,4 @@
-function Blog() {
+function Blog3() {
   return (
     <div className="p-[30px] b-[30px] flex flex-col items-center gap-[20px]">
       <h1 className="lg:text-[38px] md:text-[28px] text-[28px] lg:w-[900px] w-[300px] text-center text-[#E7742E]">
@@ -103,4 +103,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Blog3;
