@@ -13,6 +13,7 @@ export default function Card({ name, createAt, avatar, products }) {
                 {product?.name}
               </h2>
               <h2>{product?.createAt}</h2>
+              <button>{product?.btn}</button>
             </div>
           </div>
         ))}

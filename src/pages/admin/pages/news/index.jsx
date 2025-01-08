@@ -28,7 +28,7 @@ export default function News() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
       <NavbarDefault />
       <div className="flex flex-col ml-[250px]">
         <div className="bg-[#050b1aef] text-white uppercase w-[1286px] fixed">

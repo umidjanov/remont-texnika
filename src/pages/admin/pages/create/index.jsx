@@ -18,7 +18,7 @@ export default function Create() {
   };
 
   return (
-    <div className="bg-blue-gray-100 w-[100%] h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
       <NavbarDefault />
       <div className="ml-[250px]">
         <div className="bg-[#050b1aef] text-white uppercase w-[1286px]">
@@ -26,7 +26,7 @@ export default function Create() {
             this is Create page
           </h1>
         </div>
-        <div className="bg-white w-[1120px] mt-[60px] h-[380px] rounded-2xl ml-[90px] m-4">
+        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[380px] rounded-2xl ml-[90px] m-4">
           <div className=" pl-[200px] w-[1100px] pt-[80px]">
             {/* <h1 className="text-[#E7742E] mt-[-40px] uppercase ml-[10px] font-bold">
             this is Create page
