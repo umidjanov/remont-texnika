@@ -9,6 +9,7 @@ import Kontakts from "../components/kontakts";
 import Jaloba from "../components";
 import Information from "../components/malumot";
 import Footer from "../components/footer";
+import { Avatar } from "@material-tailwind/react";
 
 export default function Home() {
   return (
@@ -16,15 +17,9 @@ export default function Home() {
       <Main />
       <div className="flex flex-wrap gap-[40px] justify-center lg:mt-[250px] mb-[100px] lg:mx-[200px]">
         <div className="flex flex-wrap lg:mt-[500px] md:mt-[400px] mt-[500px] gap-[50px] justify-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card value={"name, createAt, avatar"}/>
+          <Card value={"name, createAt, avatar"}/>
+         
         </div>
       </div>
       <Blok />

@@ -1,7 +1,7 @@
-export default function Card() {
+export default function Card({name, createAt, avatar}) {
   return (
     <div className="gap-[30px] flex flex-col items-center w-[320px] ">
-      <img className="lg:w-full w-[280px]" src="public/Icon (8).png" alt="" />
+      <img className="lg:w-full w-[280px]" src={avatar} alt="" />
       <h1 className="text-[30px] text-center">РЕМОНТ КОМПЬЮТЕРОВ</h1>
       <div className="w-[250px] text-[18px]">
         <h1>Замена блока питания</h1>
