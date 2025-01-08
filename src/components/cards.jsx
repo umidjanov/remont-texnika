@@ -1,19 +1,22 @@
-export default function Card({name, createAt, avatar}) {
+export default function Card({ name, createAt, avatar, products }) {
   return (
-    <div className="gap-[30px] flex flex-col items-center w-[320px] ">
-      <img className="lg:w-full w-[280px]" src={avatar} alt="" />
-      <h1 className="text-[30px] text-center">РЕМОНТ КОМПЬЮТЕРОВ</h1>
-      <div className="w-[250px] text-[18px]">
-        <h1>Замена блока питания</h1>
-        <h1>Замена материнской платы</h1>
-        <h1>Замена жесткого диска</h1>
-        <h1>Замена видеокарты</h1>
-        <h1>Восстановление данных</h1>
-        <h1>Чистка компьютера от пыли и другое...</h1>
+    <div className="gap-[30px] flex flex-col items-center w-[]">
+      <div className="flex gap-[40px] flex-wrap justify-center">
+        {products?.map((product) => (
+          <div
+            key={product?.id}
+            className="shadow-xl rounded-xl bg-white w-[320px] p-[20px] flex flex-col gap-[10px]"
+          >
+            <img className="w-[350px]" src={product?.avatar} alt="" />
+            <div className="">
+              <h2 className="text-center text-[22px] font-bold">
+                {product?.name}
+              </h2>
+              <h2>{product?.createAt}</h2>
+            </div>
+          </div>
+        ))}
       </div>
-      <button className="bg-[#DEDEDE] px-[33px] py-[8px] rounded-lg text-[18px] font-bold">
-        подробности и цены
-      </button>
     </div>
   );
 }

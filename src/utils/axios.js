@@ -1,3 +1,3 @@
 const instance = axios.create({
-    baseURL: 'https://67519457d1983b9597b37640.mockapi.io'
+    baseURL: 'https://677e584d94bde1c1252b8e7e.mockapi.io'
   });

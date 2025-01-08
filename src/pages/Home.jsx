@@ -10,16 +10,30 @@ import Jaloba from "../components";
 import Information from "../components/malumot";
 import Footer from "../components/footer";
 import { Avatar } from "@material-tailwind/react";
+import { useEffect, useState } from "react";
+import { instance } from "./admin/utils/axios";
 
 export default function Home() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+      instance
+        .get("/product")
+        .then((res) => {
+          setProducts(res.data);
+        })
+        .catch((error) => {
+          console.error("Error fetching products:", error);
+        });
+    }, []);
+  
   return (
     <div>
       <Main />
       <div className="flex flex-wrap gap-[40px] justify-center lg:mt-[250px] mb-[100px] lg:mx-[200px]">
         <div className="flex flex-wrap lg:mt-[500px] md:mt-[400px] mt-[500px] gap-[50px] justify-center">
-          <Card value={"name, createAt, avatar"}/>
-          <Card value={"name, createAt, avatar"}/>
-         
+          <Card name="name" createAt="sana" avatar="ava" />
+          <Card products={products} name="name" createAt="sana" avatar="ava" />
         </div>
       </div>
       <Blok />
