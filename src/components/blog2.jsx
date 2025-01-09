@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "./../media/white.png";
 import str from "./../media/Vector.png";
 import tg from "./../media/Telegram.png";
@@ -18,12 +18,54 @@ import lok from "./../media/location.png";
 import eml from "./../media/email.png";
 import hou from "./../media/hours.png";
 import { Button, Checkbox, Input } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
-const Blog2 = () => {
+export default function Blog2() {
+  const [isChecked, setIsChecked] = useState(false); // Checkbox holati
+  const [isChecked2, setIsChecked2] = useState(false); // Checkbox holati
+  const [name, setName] = useState("");
+  const [name2, setName2] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail2] = useState("");
+  const [question, setQuestion2] = useState("");
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+  const handleCheckboxChange2 = () => {
+    setIsChecked2(!isChecked2);
+  };
+
+  const jonatis = () => {
+    if (!isChecked) {
+      alert("Iltimos, shartlarga rozilik bildiring!");
+      return;
+    }
+
+    console.log("Ism:", name);
+    console.log("Telefon:", phone);
+    console.log("Email:", email);
+    console.log("Savol:", question);
+
+    setName("");
+    setPhone("");
+    // setEmail("");
+    // setQuestion("");
+    setIsChecked(false);
+
+    alert("заказ принят!");
+  };
+  const jonatish = () => {
+    if (!isChecked2) {
+      alert("Iltimos, shartlarga rozilik bildiring!");
+      return;
+    }
+  };
+
   return (
     <div>
       <div className="bg-[#0B1427] h-[140px]">
-        <div className=" flex items-center justify-between mr-[38px] px-[300px] py-[26px]">
+        <div className=" flex items-center justify-between mr-[38px] px-[200px] py-[26px]">
           <img className="h-[90px]" src={img} alt="" />
           <div className="flex text-white flex-col gap-3">
             <div className="flex gap-3">
@@ -42,7 +84,7 @@ const Blog2 = () => {
             <div>
               <ul className="flex gap-2 ml-[1px] text-[11px]">
                 <li className="border-r-[3px] pr-2 h-[11px] border-[#E7742E] hover:text-[#E7742E]">
-                  <a href="#">ГЛАВНАЯ</a>
+                  <Link to={"/"}>ГЛАВНАЯ</Link>
                 </li>
                 <li className="border-r-[3px] pr-2 h-[11px] border-[#E7742E] hover:text-[#E7742E]">
                   <a href="#">О НАС</a>
@@ -67,61 +109,61 @@ const Blog2 = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div>
         <h1 className=" flex text-center justify-center  text-4xl mx-[710px] my-8 border-b-[3px] border-[#E7742E]">
           БЛОГ
         </h1>
-        <div className=" flex gap-8 flex-wrap px-[319px]">
-          <div className=" py-4  w-[270px]">
+        <div className=" flex gap-8 flex-wrap ml-[55px] px-[229px]">
+          <div className=" py-4  w-[370px]">
             <img src={kom} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center">
               КАК ПРОДЛИТЬ ЖИЗНЬ НОУТБУКУ: 10 ПРАВИЛ ГРАМОТНОГО ИСПОЛЬЗОВАНИЯ{" "}
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={chas} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Что делать,если компьютер медленно работает{" "}
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={mik} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Компьютерный вирус. способы заражения и методы защиты
             </h1>
           </div>
 
-<div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={kom2} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Система резервного копирования, что это?
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={kla} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ЧИСТКА НОУТБУКОВ
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={vod} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Если пролили жидкость на ноутбук, что делать?
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={tex} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ВОССТАНОВЛЕНИЕ УДАЛЕННЫХ ДАННЫХ
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={med} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               как часто надо проводить профилактику
             </h1>
           </div>
-          <div className=" py-4 w-[270px]">
+          <div className=" py-4 w-[370px]">
             <img src={tru} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               НАСТРОЙКА роутера и домашней сети
@@ -131,8 +173,8 @@ const Blog2 = () => {
         <img className="m-auto w-[100px]" src={skr} alt="" />
       </div>
       <div>
-        <h1 className=" flex text-center w-[400px] justify-center text-4xl mx-[570px] mt-12 my-6 border-b-[3px] border-[#E7742E]">
-          ВЗНИКЛИ ВОПРОСЫ?{" "}
+        <h1 className=" flex text-center w-[450px] justify-center text-4xl mx-[570px] mt-12 my-6 border-b-[3px] border-[#E7742E]">
+          ВОЗНИКЛИ ВОПРОСЫ?{" "}
         </h1>
         <p className="text-blue-gray-700 text-center">
           Мы с радостью ответим на любой вопрос о вашей технике. Позвоните или
@@ -141,46 +183,77 @@ const Blog2 = () => {
         <div className="flex gap-8 p-[30px] m-auto justify-center">
           <div className="w-[400px] mb-4">
             <h1>Ваше имя*</h1>
-            <Input label="Имя"></Input>
+            <Input
+              label="Имя"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
             <h1>Ваш телефон*</h1>
-            <Input type="password" label="+7(  )  - _ - _"></Input>
+            <Input
+              type="text"
+              label="+7(  )  - _ - _"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
             <div className="flex">
-              <Checkbox></Checkbox>
+              <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
               <p className="text-[13px] mt-6 w-[300px]">
                 Даю согласие на обработку моих персональных данных и принимаю{" "}
                 <b>политику конфиденциальности</b>
               </p>
             </div>
-            <Button className="bg-[#E7742E] text-black my-4">
+            <Button
+              onClick={jonatis}
+              disabled={!isChecked} // Checkbox bosilmasa, tugma bloklanadi
+              className={`bg-[#E7742E] text-black my-4 ${
+                !isChecked ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
               ЗАКАЗАТЬ ЗВОНОК
             </Button>
           </div>
           <div className="flex bg-blue-gray-300 w-[1px] h-[470px]"> </div>
           <div className="w-[400px]">
             <h1>Ваше имя*</h1>
-            <Input label="Имя"></Input>
+            <Input
+              label="Имя"
+              value={name2}
+              onChange={(e) => setName2(e.target.value)}
+            />
             <h1>Ваш e-mail*</h1>
-            <Input label="E-mail"></Input>
+            <Input
+              label="E-mail"
+              value={email}
+              onChange={(e) => setEmail2(e.target.value)}
+            />
             <h1>Ваш вопрос</h1>
             <textarea
               label="Текст вопроса"
               className="w-[400px] h-[160px] border-[2px] rounded-xl border-blue-gray-200"
-              name=""
-              id=""
+              value={question}
+              onChange={(e) => setQuestion2(e.target.value)}
             ></textarea>
             <div className="flex">
-              <Checkbox></Checkbox>
+              <Checkbox checked={isChecked2} onChange={handleCheckboxChange2} />
               <p className="text-[13px] mt-6 w-[300px]">
                 Даю согласие на обработку моих персональных данных и принимаю{" "}
                 <b>политику конфиденциальности</b>
               </p>
             </div>
-            <Button className="bg-[#E7742E] text-black my-4">ОТПРАВИТЬ</Button>
+            <Button
+              onClick={jonatish}
+              disabled={!isChecked2} // Checkbox bosilmasa, tugma bloklanadi
+              className={`bg-[#E7742E] text-black my-4 ${
+                !isChecked2 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+            >
+              ОТПРАВИТЬ
+            </Button>
           </div>
         </div>
       </div>
 
-<div className="bg-[#0B1427] text-white mt-7 pt-[60px] p-[40px] items-center flex flex-col gap-[40px]">
+      <div className="bg-[#0B1427] text-white mt-7 pt-[60px] p-[40px] items-center flex flex-col gap-[40px]">
         <div className="flex gap-[100px] px-[180px]">
           <div className="lg:w-[300px] lg:flex hidden flex-col gap-[30px]">
             <img className="h-[100px] w-[300px]" src={img} alt="" />
@@ -270,8 +343,7 @@ const Blog2 = () => {
           </div>
         </div>
         <div className="flex  flex-col gap-[10px]">
-
-<div className="border-[2px] border-[#E7742E] lg:w-[1090px] w-[300px]"></div>
+          <div className="border-[2px] border-[#E7742E] lg:w-[1090px] w-[300px]"></div>
           <div className="flex px-[px] justify-between items-center ">
             <a
               href="https://yapl.ru/ru/remont-geko.ru/"
@@ -294,6 +366,4 @@ const Blog2 = () => {
       </div>
     </div>
   );
-};
-
-export default Blog2;
+}
