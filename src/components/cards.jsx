@@ -7,7 +7,7 @@ export default function Card({ name, createAt, avatar, products }) {
             key={product?.id}
             className="shadow-xl rounded-xl bg-white w-[320px] p-[20px] flex flex-col gap-[30px] items-center"
           >
-            <img className="w-[350px]" src={product?.avatar} alt="" />
+            <img className="w-[100px]" src={product?.avatar} alt="" />
             <div className="flex flex-col gap-[20px] ">
               <h2 className="text-center text-[27px] font-semibold">
                 {product?.name}

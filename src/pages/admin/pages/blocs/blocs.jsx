@@ -14,12 +14,12 @@ export default function Blocs() {
         <div className="mt-[40px] ml-[80px] flex flex-col gap-[30px] items-center py-[80px]">
           <h1 className="text-[20px] flex gap-[10px] font-semibold text-white" style={{fontFamily: "monospace"}}>Bu yerda userdagi cardlarning <p className="text-[#ff9326]">img:</p> larini olishimiz mumkin</h1>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="150px" className="ml-[40px]" src="http://localhost:5173/public/Computers.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[40px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Computers.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>

@@ -10,7 +10,8 @@ import CreateBlog from "./pages/admin/pages/create blog";
 import NewsBlog from "./pages/admin/pages/news blog";
 import Blocs from "./pages/admin/pages/blocs/blocs";
 import Docs from "./pages/admin/pages/docs/docs";
-import Blog3 from "./components/blog";
+import Blog3 from "./components/blog.jsx";
+import Blog2 from "./components/blog2.jsx";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/admin/news" element={<News />} />
         <Route path="/admin/news/:id" element={<Update />} />
         <Route path="/blog" element={<Blog3 />} />
+        <Route path="/blog2" element={<Blog2 />}/>
       </Routes>
     </BrowserRouter>
   );

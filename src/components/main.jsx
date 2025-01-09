@@ -102,7 +102,7 @@ export default function Mail() {
                     отзывы
                   </button>
                   <div className="border-[2px] border-[#E7742E] h-[20px] md:hidden lg:flex"></div>
-                  <Link to={"/blog3"}>
+                  <Link to={"/blog2"}>
                     <button className="lg:text-[23px] md:text-[16px]">
                       блог
                     </button>
