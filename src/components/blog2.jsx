@@ -78,10 +78,10 @@ export default function Blog2() {
   return (
     <div>
       <div className="bg-[#0B1427] h-[140px]">
-        <div className="flex justify-center items-center lg:gap-[220px] md:gap-[90px] mx-[200px] pt-[20px]">
+        <div className="flex justify-center items-center lg:gap-[220px] md:gap-[90px] mx-[180px] pt-[20px]">
           <img className="h-[90px]" src={img} alt="" />
-          <div className="flex flex-col gap-[10px] lg:w-[1000px] md:w-[500px] text-white">
-            <div className="flex lg:gap-[20px] md:gap-[16px] items-center text-[24px] font-bold">
+          <div className="flex flex-col gap-[15px] lg:w-[1000px] md:w-[500px] text-white">
+            <div className="flex lg:gap-[25px] md:gap-[16px] items-center text-[24px] font-bold">
               <div className="flex items-center gap-2">
                 <img className="w-[20px] h-[20px]" src={str} alt="" />
                 <h1>+7 (495) 135-45-47</h1>
@@ -90,37 +90,39 @@ export default function Blog2() {
                 <img className="w-[20px] h-[20px]" src={str} alt="" />
                 <h1>+7 (965) 318-70-14</h1>
               </div>
-              <img className="lg:w-[30px] md:w-[25px]" src={ins} alt="" />
-              <img className="lg:w-[30px] md:w-[25px]" src={wch} alt="" />
-              <img className="lg:w-[30px] md:w-[25px]" src={tg} alt="" />
+              <div className="flex gap-[20px]">
+                <img className="lg:w-[30px] md:w-[25px]" src={ins} alt="" />
+                <img className="lg:w-[30px] md:w-[25px]" src={wch} alt="" />
+                <img className="lg:w-[30px] md:w-[25px]" src={tg} alt="" />
+              </div>
             </div>
             <div>
               <div className="lg:flex md:flex hidden gap-[12px] font-[500] text-[20px] items-center">
-                <button className="lg:text-[23px] md:text-[16px]">
-                  ГЛАВНАЯ
+                <button className="lg:text-[18px] md:text-[6px] hover:text-[#E7742E] hover:transition">
+                  <Link to={"/"}>ГЛАВНАЯ</Link>
                 </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
-                <button className="lg:text-[23px] md:text-[16px]">О НАС</button>
+                <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">О НАС</button>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
-                <button className="lg:text-[23px] md:text-[16px]">
+                <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">
                   УСЛУГИ
                 </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
-                <button className="lg:text-[23px] md:text-[16px] md:hidden lg:flex">
+                <button className="lg:text-[18px] md:text-[16px] md:hidden lg:flex hover:text-[#E7742E] hover:transition">
                   ПРАЙС-ЛИСТ
                 </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px] md:hidden lg:flex"></div>
-                <button className="lg:text-[23px] md:text-[16px] md:hidden lg:flex">
+                <button className="lg:text-[18px] md:text-[16px] md:hidden lg:flex hover:text-[#E7742E] hover:transition">
                   ОТЗЫВЫ
                 </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px] md:hidden lg:flex"></div>
                 <Link to={"/blog2"}>
-                  <button className="lg:text-[23px] md:text-[16px]">
+                  <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">
                     БЛОГ
                   </button>
                 </Link>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
-                <button className="lg:text-[23px] md:text-[16px]">
+                <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">
                   КОНТАКТЫ
                 </button>
               </div>
@@ -128,61 +130,62 @@ export default function Blog2() {
           </div>
         </div>
       </div>
+
       <div>
         <h1 className="flex text-center justify-center text-4xl mx-[710px] my-8 border-b-[3px] border-[#E7742E]">
           БЛОГ
         </h1>
-        <div className=" flex gap-8 flex-wrap ml-[55px] px-[229px]">
-          <div className="py-4 w-[370px]">
+        <div className=" flex gap-8 flex-wrap ml-[55px] px-[230px]">
+          <div className=" py-4 w-[300px]">
             <img src={kom} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center">
               КАК ПРОДЛИТЬ ЖИЗНЬ НОУТБУКУ: 10 ПРАВИЛ ГРАМОТНОГО ИСПОЛЬЗОВАНИЯ{" "}
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={chas} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Что делать,если компьютер медленно работает{" "}
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={mik} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Компьютерный вирус. способы заражения и методы защиты
             </h1>
           </div>
 
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={kom2} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Система резервного копирования, что это?
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={kla} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ЧИСТКА НОУТБУКОВ
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={vod} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Если пролили жидкость на ноутбук, что делать?
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={tex} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ВОССТАНОВЛЕНИЕ УДАЛЕННЫХ ДАННЫХ
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={med} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               как часто надо проводить профилактику
             </h1>
           </div>
-          <div className="py-4 w-[370px]">
+          <div className=" py-4 w-[300px]">
             <img src={tru} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               НАСТРОЙКА роутера и домашней сети
@@ -191,8 +194,9 @@ export default function Blog2() {
         </div>
         <img className="m-auto w-[100px]" src={skr} alt="" />
       </div>
+
       <div>
-        <h1 className="flex text-center w-[450px] justify-center text-4xl mx-[570px] mt-12 my-6 border-b-[3px] border-[#E7742E]">
+        <h1 className=" flex text-center w-[450px] justify-center text-4xl mx-[570px] mt-12 my-6 border-b-[3px] border-[#E7742E]">
           ВОЗНИКЛИ ВОПРОСЫ?{" "}
         </h1>
         <p className="text-blue-gray-700 text-center">
