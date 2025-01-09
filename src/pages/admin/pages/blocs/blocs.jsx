@@ -33,12 +33,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="120px" className="ml-[45px]" src="http://localhost:5173/public/Notebooks.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[55px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Notebooks.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -52,12 +52,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="135px" className="ml-[45px]" src="http://localhost:5173/public/Monoblocks.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[60px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Monoblocks.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -71,12 +71,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="50px" className="ml-[40px]" src="http://localhost:5173/public/Apple.png" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[10px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Apple.png'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -90,12 +90,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="80px" className="ml-[40px]" src="http://localhost:5173/public/Upgrade.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[30px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Upgrade.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -109,12 +109,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="70px" className="ml-[40px]" src="http://localhost:5173/public/Windows.png" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[35px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Windows.png'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -128,12 +128,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="115px" className="ml-[20px]" src="http://localhost:5173/public/Viruses.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[4px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Viruses.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -147,12 +147,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="90px" className="ml-[35px]" src="http://localhost:5173/public/Internet.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[35px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Internet.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
@@ -166,12 +166,12 @@ export default function Blocs() {
             </div>
           </card>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
-            <img width="250px" src="http://localhost:5173/public/Icon%20(8).png" alt="komputer" />
-            <div className="flex flex-col items-start font-bold" style={{fontFamily: "monospace"}}>
+            <img width="80px" className="ml-[50px]" src="http://localhost:5173/public/Corporate.svg" alt="komputer" />
+            <div className="flex flex-col items-start font-bold ml-[50px]" style={{fontFamily: "monospace"}}>
               <div className="flex gap-[10px]">
                 <span className="text-[17px] text-[#ff2395]">img:</span>
                 <div className="flex">
-                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Icon%20(8).png'</span>
+                  <span className="text-[17px] text-[#75c124]">'http://localhost:5173/public/Corporate.svg'</span>
                   <span className="text-[17px] text-white">,</span>
                 </div>
               </div>
