@@ -51,7 +51,7 @@ export default function Blog2() {
     setPhone("");
     // setEmail("");
     // setQuestion("");
-    setIsChecked(false);
+    setEmail2(false);
 
     alert("заказ принят!");
   };
@@ -60,6 +60,19 @@ export default function Blog2() {
       alert("Iltimos, shartlarga rozilik bildiring!");
       return;
     }
+
+    console.log("Ism:", name);
+    console.log("Telefon:", phone);
+    console.log("Email:", email);
+    console.log("Savol:", question);
+
+    setName2("");
+    setPhone("");
+    setEmail2("");
+    setQuestion2("");
+    // setEmail2(false);
+
+    alert("заказ принят!");
   };
 
   return (
@@ -204,7 +217,7 @@ export default function Blog2() {
             </div>
             <Button
               onClick={jonatis}
-              disabled={!isChecked} // Checkbox bosilmasa, tugma bloklanadi
+              disabled={!isChecked}
               className={`bg-[#E7742E] text-black my-4 ${
                 !isChecked ? "opacity-50 cursor-not-allowed" : ""
               }`}
@@ -222,14 +235,15 @@ export default function Blog2() {
             />
             <h1>Ваш e-mail*</h1>
             <Input
-              label="E-mail"
+              type="email"
+              label="Email"
               value={email}
               onChange={(e) => setEmail2(e.target.value)}
             />
             <h1>Ваш вопрос</h1>
             <textarea
               label="Текст вопроса"
-              className="w-[400px] h-[160px] border-[2px] rounded-xl border-blue-gray-200"
+              className="w-[400px] h-[160px] border-[2px] rounded-xl border-blue-gray-200 p-[10px]"
               value={question}
               onChange={(e) => setQuestion2(e.target.value)}
             ></textarea>
@@ -253,17 +267,17 @@ export default function Blog2() {
         </div>
       </div>
 
-      <div className="bg-[#0B1427] text-white mt-7 pt-[60px] p-[40px] items-center flex flex-col gap-[40px]">
-        <div className="flex gap-[100px] px-[180px]">
-          <div className="lg:w-[300px] lg:flex hidden flex-col gap-[30px]">
-            <img className="h-[100px] w-[300px]" src={img} alt="" />
+      <div className="bg-[#0B1427] text-white p-[40px] items-center flex flex-col gap-[40px]">
+        <div className="flex lg:gap-[100px] gap-[30px]">
+          <div className="lg:w-[300px] lg:flex hidden flex-col gap-[50px]">
+            <img src="public/white.png" alt="" />
             <a
               href="https://www.rusprofile.ru/ip/320623400028827"
-              className="w-[150px] text-[13px]"
+              className="w-[150px] text-[18px]"
             >
               ИП Шумихин М.А.ИНН/ОГРНИП:141800214410/320623400028827
             </a>
-            <h1 className="text-[13px] w-[250px] text-[#acacac]">
+            <h1 className="text-[16px] text-[#acacac]">
               Обращаем ваше внимание на то, что данный интернет-сайт носит
               исключительно информационный характер и ни при каких условиях не
               является публичной офертой, определяемой положениями Статьи 437
@@ -271,30 +285,18 @@ export default function Blog2() {
             </h1>
           </div>
           <div>
-            <ul className="flex flex-col w-[120px] gap-[15px] text-[15px] font-[200] cursor-pointer">
-              <li>
-                <a href="Main">ГЛАВНАЯ</a>
-              </li>
-              <li>
-                <a href="#">О КОМПАНИИ</a>
-              </li>
-              <li>
-                <a href="#">ПРАЙС-ЛИСТ</a>
-              </li>
-              <li>
-                <a href="#">ОТЗЫВЫ</a>
-              </li>
-              <li>
-                <a href="#">БЛОГ</a>
-              </li>
-              <li>
-                <a href="Block3">КОНТАКТЫ</a>
-              </li>
+            <ul className="flex flex-col gap-[20px] lg:text-[20px] text-[10px] font-[500] cursor-pointer">
+              <a href="Main">Главная</a>
+              <li>О компании</li>
+              <li>прайс-лист</li>
+              <li>ОТЗЫВЫ</li>
+              <li>БЛОГ</li>
+              <a href="Block3">КОНТАКТЫ</a>
             </ul>
           </div>
           <div>
-            <ul className="flex flex-col lg:gap-[10px] gap-[10px] text-[10px] lg:text-[15px]">
-              <li>УСЛУГИ</li>
+            <ul className="flex flex-col lg:gap-[20px] gap-[10px] text-[10px] lg:text-[20px]">
+              <li>Услуги</li>
               <li>Ремонт компьютеров</li>
               <li>Ремонт ноутбуков</li>
               <li>Ремонт моноблоков</li>
@@ -307,57 +309,54 @@ export default function Blog2() {
             </ul>
           </div>
           <div className="flex flex-col gap-[20px] items-start">
-            <ul className="lg:flex hidden flex-col gap-[14px]">
-              <div className="flex items-center gap-2">
-                <img className="w-[20px] h-[20px]" src={str} alt="" />
-                <li className="text-[20px]"> +7 (495) 135-45-47</li>
-              </div>
-              <div className="flex items-center gap-2">
-                <img className="w-[20px] h-[20px]" src={str} alt="" />
-                <li className="text-[20px]"> +7 (965) 318-70-14</li>
-              </div>
-              <div className="text-[15px] pt-3">
-                <div className="flex gap-2">
-                  <img className="w-[20px] h-[20px]" src={lok} alt="" />
-                  <a href="https://yandex.uz/maps/213/moscow/house/lyublinskaya_ulitsa_141/Z04YcQNhTEEOQFtvfXp3dHRjZg==/?ll=37.741549%2C55.665802&z=16">
-                    г. Москва, ул. Люблинская 141, офис 319Б
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <img className="w-[20px] h-[20px]" src={eml} alt="" />
-                  <a href="https://wdomain.ru/remont-geko.ru">
-                    info@remont-geko.ru
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <img className="w-[20px] h-[20px]" src={hou} alt="" />
-                  <a href="https://99evro.ru/">10:00 - 20:00 (без выходных)</a>
-                </div>
-              </div>
+            <ul className="lg:flex hidden flex-col gap-[20px]">
+              <li className="text-[20px]">+7 (495) 135-45-47</li>
+              <li className="text-[20px]">+7 (965) 318-70-14</li>
+              <a href="https://yandex.uz/maps/213/moscow/house/lyublinskaya_ulitsa_141/Z04YcQNhTEEOQFtvfXp3dHRjZg==/?ll=37.741549%2C55.665802&z=16">
+                г. Москва, ул. Люблинская 141, офис 319Б
+              </a>
+              <a href="https://wdomain.ru/remont-geko.ru">
+                info@remont-geko.ru
+              </a>
+              <a href="https://99evro.ru/">10:00 - 20:00 (без выходных)</a>
             </ul>
-            <div className="flex pt-4 gap-[20px]">
-              <img className="cursor-pointer" src={ins} alt="" />
-              <img className="cursor-pointer" src={wch} alt="" />
-              <img className="cursor-pointer" src={tg} alt="" />
+            <div className="lg:flex md:flex hidden gap-[20px]">
+              <img
+                className="cursor-pointer"
+                src="public/Instagram copy.png"
+                alt=""
+              />
+              <img
+                className="cursor-pointer"
+                src="public/Whatsapp copy.png"
+                alt=""
+              />
+              <img
+                className="cursor-pointer"
+                src="public/Telegram copy.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div className="flex  flex-col gap-[10px]">
-          <div className="border-[2px] border-[#E7742E] lg:w-[1090px] w-[300px]"></div>
-          <div className="flex px-[px] justify-between items-center ">
+        <div className="flex flex-col gap-[20px]">
+          <div className="border-[1px] border-[#E7742E] lg:w-[1325px] w-[300px]"></div>
+          <div className="flex justify-between items-center ">
             <a
               href="https://yapl.ru/ru/remont-geko.ru/"
               className="flex gap-[5px] text-[20px]"
             >
-              <h1 className="text-[#E7742E]">@2021</h1>{" "}
-              <h1 className="text-[17px] pt-[3px]">remont-geko.ru</h1>
+              <h1 className="text-[#E7742E]">@2021</h1> remont-geko.ru
             </a>
-            <div className="flex gap-[20px] items-center text-[17px]">
+            <div className="flex gap-[20px] items-center text-[20px]">
               <a href="https://vnikitinsky.medium.com/как-создать-карту-сайта-простое-руководство-5b5c483dad5c">
                 Карта сайта
               </a>
               <div className="lg:flex hidden h-[20px] border-[2px] border-[#E7742E]"></div>
-              <a href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063">
+              <a
+                className="lg:flex md:flex hidden"
+                href="https://eni-bbmv.ru/ru/doc/politika-konfident?utm_type=bp&yclid=1578896986159448063"
+              >
                 Политика конфиденциальности
               </a>
             </div>
