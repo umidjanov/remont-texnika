@@ -7,11 +7,11 @@ export default function Blocs() {
       <NavbarDefault />
       <div className="flex flex-col gap-[20px] pl-[250px]">
         <div className="pl-[40px] bg-[#050b1aef] text-white uppercase w-[1286] flex fixed">
-          <h1 className="pt-6 border-1 p-3 w-[1246px] font-bold">
+          <h1 className="pt-6 border-1 p-3 w-[1400px] font-bold">
             this is Blocs page
           </h1>
         </div>
-        <div className="mt-[40px] ml-[80px] flex flex-col gap-[30px] items-center py-[80px]">
+        <div className="mt-[40px] ml-[110px] flex flex-col gap-[30px] items-center py-[80px]">
           <h1 className="text-[20px] flex gap-[10px] font-semibold text-white" style={{fontFamily: "monospace"}}>Bu yerda userdagi cardlarning <p className="text-[#ff9326]">img:</p> larini olishimiz mumkin</h1>
           <card className="flex justify-around w-[1050px] h-[100px] items-center rounded-[10px] cursor-text bg-[#0a133c8f] hover:border-[2px] border-[aqua] transition-[0.01] shadow-md shadow-[#ffffff18]">
             <img width="150px" className="ml-[40px]" src="http://localhost:5173/public/Computers.svg" alt="komputer" />

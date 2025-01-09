@@ -28,7 +28,7 @@ export default function NewsBlog() {
   };
 
   return (
-    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100%] lg:h-[100vh] flex">
       <NavbarDefault />
       <div className="flex flex-col ml-[250px]">
         <div className="bg-[#050b1aef] text-white uppercase w-[1789px] fixed">
