@@ -19,10 +19,9 @@ export default function NewsBlog() {
   }, []);
 
   const deleted = async (id) => {
-    e.preventDefault()
     try {
       await instance.delete(`/newsblog/${id}`);
-      setNewsblog(newsblog.filter((newsblog) => news.id !== id));
+      setNews(newsblog.filter((newsblog) => newsblog.id !== id));
     } catch (error) {
       console.error("Error deleting news:", error);
     }
@@ -49,7 +48,7 @@ export default function NewsBlog() {
                   <h3 className="text-center text-[12px]">{newsblog?.desk}</h3>
                 </div>
                 <div className="flex flex-col gap-4 ">
-                  <Link to={`/admin/news/${newsblog?.id}`}>
+                  <Link to={`/admin/UpdateBlog/${newsblog?.id}`}>
                     <Button className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E] p-[10px]">
                       update
                     </Button>

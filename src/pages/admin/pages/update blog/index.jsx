@@ -1,31 +1,27 @@
 import { useEffect, useState } from "react";
-import { instance } from "../utils/axios";
+import { instance } from "../../utils/axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { Input } from "@material-tailwind/react";
-import NavbarDefault from "../components/navbar";
+import NavbarDefault from "../../components/navbar";
 
 export default function UpdatBloge() {
   const { id } = useParams();
-  // const [name, setName] = useState("");
   const [desk, setDesk] = useState("");
   const [avatar, setAvatar] = useState("");
-  // const [btn, setBtn] = useState("");
   const nav = useNavigate();
 
   useEffect(() => {
     instance.get(`/newsblog/${id}`).then((res) => {
-      setName(res.data.name),
-        setCreateAt(res.data.createAt),
-        setAvatar(res.data.avatar);
-      setBtn(res.data.btn);
+      setDesk(res.data.desk),
+      setAvatar(res.data.avatar);
     });
   }, [id]);
 
   const update = (e) => {
     e.preventDefault();
-    instance.put(`/admin/update/${id}`, { desk, avatar }).then(() => {
+    instance.put(`/newsblog/${id}`, { desk, avatar }).then(() => {
       nav("/admin/newsblog");
-    });
+    })
   };
 
   return (
@@ -34,7 +30,7 @@ export default function UpdatBloge() {
       <div className="pl-[250px]">
         <div className="pl-[40px] bg-[#050b1aef] text-white uppercase w-[1286px]">
           <h1 className="pt-6 border-1  p-3 w-full font-bold">
-            this is Update page
+            this is Update blog page
           </h1>
         </div>
         {/* <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
@@ -97,7 +93,7 @@ export default function UpdatBloge() {
                 type="text"
                 label="img"
               />
-              <button className="bg-[#E7742E] rounded-lg px-[21px] py-[6px] text-black border-[#E7742E]">
+              <button type="submit" className="bg-[#E7742E] rounded-lg px-[21px] py-[6px] text-black border-[#E7742E]">
                 update
               </button>
             </form>

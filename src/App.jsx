@@ -12,7 +12,7 @@ import Docs from "./pages/admin/pages/docs/docs";
 import Blog3 from "./components/blog.jsx";
 import Blog2 from "./components/blog2.jsx";
 import CreateBlog from "./pages/admin/pages/create blog/index.jsx";
-import UpdateBlog from "./pages/admin/update blog/index.jsx";
+import UpdateBlog from "./pages/admin/pages/update blog";
 
 export default function App() {
   return (
@@ -23,8 +23,9 @@ export default function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/admin/create" element={<Create />} />
         <Route path="/admin/block" element={<CreateBlog />} />
-        <Route path="/admin/update/:id" element={<UpdateBlog />}/>
+        <Route path="/admin/updateblog/:id" element={<UpdateBlog />}/>
         <Route path="/admin/newsBlock" element={<NewsBlog />} />
+        <Route path="/admin/newsblog" element={<NewsBlog />}/>
         <Route path="/admin/blocks" element={<Blocs />} />
         <Route path="/admin/docs" element={<Docs />} />
         <Route path="/admin/news" element={<News />} />
