@@ -1,30 +1,30 @@
 import { useEffect, useState } from "react";
-import { instance } from "../../utils/axios";
+import { instance } from "../utils/axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { Input } from "@material-tailwind/react";
-import NavbarDefault from "../../components/navbar";
+import NavbarDefault from "../components/navbar";
 
-export default function Update() {
+export default function UpdatBloge() {
   const { id } = useParams();
-  const [name, setName] = useState("");
-  const [createAt, setCreateAt] = useState("");
+  // const [name, setName] = useState("");
+  const [desk, setDesk] = useState("");
   const [avatar, setAvatar] = useState("");
-  const [btn, setBtn] = useState("")
+  // const [btn, setBtn] = useState("");
   const nav = useNavigate();
 
   useEffect(() => {
-    instance.get(`/product/${id}`).then((res) => {
+    instance.get(`/newsblog/${id}`).then((res) => {
       setName(res.data.name),
         setCreateAt(res.data.createAt),
         setAvatar(res.data.avatar);
-        setBtn(res.data.btn)
+      setBtn(res.data.btn);
     });
   }, [id]);
 
   const update = (e) => {
     e.preventDefault();
-    instance.put(`/product/${id}`, { name, createAt, avatar, btn }).then(() => {
-      nav("/admin/news");
+    instance.put(`/admin/update/${id}`, { desk, avatar }).then(() => {
+      nav("/admin/newsblog");
     });
   };
 
@@ -37,7 +37,7 @@ export default function Update() {
             this is Update page
           </h1>
         </div>
-        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
+        {/* <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
           <div className=" pl-[200px] w-[1100px] pt-[80px]">
             <form
               onSubmit={(e) => update(e)}
@@ -72,6 +72,32 @@ export default function Update() {
                 label="btn"
               />
               <button className="bg-[#E7742E] rounded-lg px-[19px] text-black border-[#E7742E] p-[8px]">
+                update
+              </button>
+            </form>
+          </div>
+        </div> */}
+        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
+          <div className=" pl-[200px] w-[1100px] pt-[80px]">
+            <form
+              onSubmit={(e) => update(e)}
+              className="flex mt-6 flex-col mr-[200px] gap-8 justify-center items-center"
+            >
+              <Input
+                className="h-[49px]"
+                value={desk}
+                onChange={(e) => setDesk(e.target.value)}
+                type="text"
+                label="desc"
+              />
+              <Input
+                className="h-[49px]"
+                value={avatar}
+                onChange={(e) => setAvatar(e.target.value)}
+                type="text"
+                label="img"
+              />
+              <button className="bg-[#E7742E] rounded-lg px-[21px] py-[6px] text-black border-[#E7742E]">
                 update
               </button>
             </form>

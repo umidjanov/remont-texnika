@@ -19,6 +19,7 @@ export default function NewsBlog() {
   }, []);
 
   const deleted = async (id) => {
+    e.preventDefault()
     try {
       await instance.delete(`/newsblog/${id}`);
       setNewsblog(newsblog.filter((newsblog) => news.id !== id));
