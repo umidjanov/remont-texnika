@@ -7,6 +7,9 @@ import NavbarDefault from "../../components/navbar";
 export default function Create() {
   const [name, setName] = useState("");
   const [createAt, setCreateAt] = useState("");
+  const [createAt2, setCreateAt2] = useState("");
+  const [createAt3, setCreateAt3] = useState("");
+  const [createAt4, setCreateAt4] = useState("");
   const [avatar, setAvatar] = useState("");
   const [btn, setBtn] = useState("");
   const nav = useNavigate();
@@ -14,8 +17,8 @@ export default function Create() {
   const create = (e) => {
     e.preventDefault();
     instance
-      .post("/news", { name, createAt, avatar, btn })
-      .then(() => nav("/admin/news"));
+      .post("/news", { name, createAt, createAt2, createAt3, createAt4, avatar, btn })
+      .then(() => nav("/card"));
   };
 
   return (
@@ -28,15 +31,22 @@ export default function Create() {
           </h1>
         </div>
         <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
-          <div className=" pl-[200px] w-[1100px] pt-[80px]">
+          <div className=" pl-[200px] w-[1100px] pt-[35px]">
             {/* <h1 className="text-[#E7742E] mt-[-40px] uppercase ml-[10px] font-bold">
             this is Create page
           </h1>
           <hr className="font-bold w-[700px] border-black" /> */}
             <form
               onSubmit={(e) => create(e)}
-              className="flex mt-6 flex-col mr-[200px] gap-8 justify-center items-center"
+              className="flex mt-6 flex-col mr-[200px] gap-[10px] justify-center items-center"
             >
+              <Input
+                className="h-[49px]"
+                value={avatar}
+                onChange={(e) => setAvatar(e.target.value)}
+                type="text"
+                label="img"
+              />
               <Input
                 className="h-[49px]"
                 value={name}
@@ -53,10 +63,24 @@ export default function Create() {
               />
               <Input
                 className="h-[49px]"
-                value={avatar}
-                onChange={(e) => setAvatar(e.target.value)}
+                value={createAt2}
+                onChange={(e) => setCreateAt2(e.target.value)}
                 type="text"
-                label="img"
+                label="desc2"
+              />
+              <Input
+                className="h-[49px]"
+                value={createAt3}
+                onChange={(e) => setCreateAt3(e.target.value)}
+                type="text"
+                label="desc3"
+              />
+              <Input
+                className="h-[49px]"
+                value={createAt4}
+                onChange={(e) => setCreateAt4(e.target.value)}
+                type="text"
+                label="desc4"
               />
               <Input
                 className="h-[49px]"

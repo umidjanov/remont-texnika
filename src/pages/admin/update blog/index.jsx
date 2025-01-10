@@ -8,28 +8,22 @@ export default function Update() {
   const { id } = useParams();
   const [name, setName] = useState("");
   const [createAt, setCreateAt] = useState("");
-  const [createAt2, setCreateAt2] = useState("");
-  const [createAt3, setCreateAt3] = useState("");
-  const [createAt4, setCreateAt4] = useState("");
   const [avatar, setAvatar] = useState("");
-  const [btn, setBtn] = useState("");
+  const [btn, setBtn] = useState("")
   const nav = useNavigate();
 
   useEffect(() => {
-    instance.get(`/news/${id}`).then((res) => {
+    instance.get(`/product/${id}`).then((res) => {
       setName(res.data.name),
         setCreateAt(res.data.createAt),
-        setCreateAt2(res.data.createAt2),
-        setCreateAt3(res.data.createAt3),
-        setCreateAt4(res.data.createAt4),
         setAvatar(res.data.avatar);
-      setBtn(res.data.btn);
+        setBtn(res.data.btn)
     });
   }, [id]);
 
   const update = (e) => {
     e.preventDefault();
-    instance.put(`/news/${id}`, { name, createAt, createAt2, createAt3, createAt4, avatar, btn }).then(() => {
+    instance.put(`/product/${id}`, { name, createAt, avatar, btn }).then(() => {
       nav("/admin/news");
     });
   };
@@ -44,10 +38,10 @@ export default function Update() {
           </h1>
         </div>
         <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
-          <div className=" pl-[200px] w-[1100px] pt-[30px]">
+          <div className=" pl-[200px] w-[1100px] pt-[80px]">
             <form
               onSubmit={(e) => update(e)}
-              className="flex mt-6 flex-col mr-[200px] gap-[12px] justify-center items-center"
+              className="flex mt-6 flex-col mr-[200px] gap-8 justify-center items-center"
             >
               <Input
                 className="h-[49px]"
@@ -62,27 +56,6 @@ export default function Update() {
                 onChange={(e) => setCreateAt(e.target.value)}
                 type="text"
                 label="desc"
-              />
-              <Input
-                className="h-[49px]"
-                value={createAt2}
-                onChange={(e) => setCreateAt2(e.target.value)}
-                type="text"
-                label="desc2"
-              />
-              <Input
-                className="h-[49px]"
-                value={createAt3}
-                onChange={(e) => setCreateAt3(e.target.value)}
-                type="text"
-                label="desc3"
-              />
-              <Input
-                className="h-[49px]"
-                value={createAt4}
-                onChange={(e) => setCreateAt4(e.target.value)}
-                type="text"
-                label="desc4"
               />
               <Input
                 className="h-[49px]"

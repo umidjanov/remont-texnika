@@ -28,7 +28,7 @@ export default function News() {
   };
 
   return (
-    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100%] flex">
       <NavbarDefault />
       <div className="flex flex-col ml-[250px] bg-blue-gray-900">
         <div className="bg-[#050b1aef] text-white uppercase w-[1286px] fixed">
@@ -43,14 +43,25 @@ export default function News() {
                 key={news?.id}
                 className="shadow-2xl rounded-xl bg-white w-[250px] p-[20px] flex flex-col gap-[20px] items-center"
               >
-                <img width="110px" src={news?.avatar} alt="" />
+                <img width="120px" src={news?.avatar} alt="" />
                 <div className="flex flex-col gap-[10px]">
                   <h1 className="text-center text-[22px] font-bold">
                     {news?.name}
                   </h1>
-                  <h3 className="text-center text-[12px]">
-                    {news?.createAt}
-                  </h3>
+                  <div className="flex flex-col gap-[10px] items-start">
+                    <h3 className="text-center text-[12px]">
+                      {news?.createAt}
+                    </h3>
+                    <h2 className="text-center text-[12px]">
+                      {news?.createAt2}
+                    </h2>
+                    <h1 className="text-center text-[12px]">
+                      {news?.createAt3}
+                    </h1>
+                    <h4 className="text-center text-[12px]">
+                      {news?.createAt4}
+                    </h4>
+                  </div>
                   <h3 className="text-center text-[17px] px-[20px] py-[8px] rounded-lg bg-[#DEDEDE]">
                     {news?.btn}
                   </h3>
