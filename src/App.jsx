@@ -6,12 +6,12 @@ import Create from "./pages/admin/pages/create";
 import News from "./pages/admin/pages/news";
 import Update from "./pages/admin/pages/update";
 import NavbarDefault from "./pages/admin/components/navbar/index";
-import CreateBlog from "./pages/admin/pages/create blog";
 import NewsBlog from "./pages/admin/pages/news blog";
 import Blocs from "./pages/admin/pages/blocs/blocs";
 import Docs from "./pages/admin/pages/docs/docs";
 import Blog3 from "./components/blog.jsx";
 import Blog2 from "./components/blog2.jsx";
+import CreateBlog from "./pages/admin/pages/create blog/index.jsx";
 
 export default function App() {
   return (

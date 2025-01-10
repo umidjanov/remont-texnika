@@ -5,15 +5,14 @@ import { Input } from "@material-tailwind/react";
 import NavbarDefault from "../../components/navbar";
 
 export default function CreateBlog() {
-  const [name, setName] = useState("");
-  const [createAt, setCreateAt] = useState("");
+  const [desk, setDesk] = useState("");
   const [avatar, setAvatar] = useState("");
   const nav = useNavigate();
 
   const create = (e) => {
     e.preventDefault();
     instance
-      .post("/product", { name, createAt, avatar })
+      .post("/newsblog", { desk, avatar })
       .then(() => console.log(title, desc, img), nav("/admin/newsBlock"));
   };
 
@@ -27,27 +26,16 @@ export default function CreateBlog() {
           </h1>
         </div>
 
-        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[380px] rounded-2xl ml-[90px] m-4">
+        <div className="bg-[#f0ffee] w-[1120px] mt-[60px] h-[480px] rounded-2xl ml-[90px] m-4">
           <div className=" pl-[200px] w-[1100px] pt-[80px]">
-            {/* <h1 className="text-[#E7742E] mt-[-40px] uppercase ml-[10px] font-bold">
-            this is Create page
-          </h1>
-          <hr className="font-bold w-[700px] border-black" /> */}
             <form
               onSubmit={(e) => create(e)}
               className="flex mt-6 flex-col mr-[200px] gap-8 justify-center items-center"
             >
               <Input
                 className="h-[49px]"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                label="title"
-              />
-              <Input
-                className="h-[49px]"
-                value={createAt}
-                onChange={(e) => setCreateAt(e.target.value)}
+                value={desk}
+                onChange={(e) => setDesk(e.target.value)}
                 type="text"
                 label="desc"
               />

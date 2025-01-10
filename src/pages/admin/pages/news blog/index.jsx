@@ -5,30 +5,30 @@ import { Button } from "@material-tailwind/react";
 import NavbarDefault from "../../components/navbar";
 
 export default function NewsBlog() {
-  const [products, setProducts] = useState([]);
+  const [newsblog, setNewsblog] = useState([]);
 
   useEffect(() => {
     instance
-      .get("/product")
+      .get("/newsblog")
       .then((res) => {
-        setProducts(res.data);
+        setNewsblog(res.data);
       })
       .catch((error) => {
-        console.error("Error fetching products:", error);
+        console.error("Error fetching news:", error);
       });
   }, []);
 
   const deleted = async (id) => {
     try {
-      await instance.delete(`/product/${id}`);
-      setProducts(products.filter((product) => product.id !== id));
+      await instance.delete(`/newsblog/${id}`);
+      setNewsblog(newsblog.filter((newsblog) => news.id !== id));
     } catch (error) {
-      console.error("Error deleting product:", error);
+      console.error("Error deleting news:", error);
     }
   };
 
   return (
-    <div className="bg-blue-gray-900 w-[100%] h-[100%] lg:h-[100vh] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
       <NavbarDefault />
       <div className="flex flex-col ml-[250px]">
         <div className="bg-[#050b1aef] text-white uppercase w-[1789px] fixed">
@@ -38,31 +38,24 @@ export default function NewsBlog() {
         </div>
         <div className="flex items-center justify-center flex-col gap-[20px] p-[30px]">
           <div className="flex gap-[20px] flex-wrap px-[74px] pt-[70px]">
-            {products?.map((product) => (
+            {newsblog?.map((newsblog) => (
               <div
-                key={product?.id}
+                key={newsblog?.id}
                 className="shadow-2xl rounded-xl bg-white w-[250px] p-[20px] flex flex-col gap-[10px]"
               >
-                <img src={product?.avatar} alt="" />
+                <img src={newsblog?.avatar} alt="" />
                 <div>
-                  <h1 className="text-center text-[22px] font-bold">
-                    {product?.name}
-                  </h1>
-                  <h3 className="text-center text-[12px]">
-                    {product?.createAt}
-                  </h3>
-                  
+                  <h3 className="text-center text-[12px]">{newsblog?.desk}</h3>
                 </div>
-                {/* <h2>ID: {product?.id}</h2> */}
                 <div className="flex flex-col gap-4 ">
-                  <Link to={`/admin/news/${product?.id}`}>
+                  <Link to={`/admin/news/${newsblog?.id}`}>
                     <Button className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E] p-[10px]">
                       update
                     </Button>
                   </Link>
                   <Button
                     className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E] p-[10px]"
-                    onClick={() => deleted(product?.id)}
+                    onClick={() => deleted(newsblog?.id)}
                   >
                     delete
                   </Button>

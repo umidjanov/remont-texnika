@@ -18,7 +18,7 @@ export default function Create() {
     e.preventDefault();
     instance
       .post("/news", { name, createAt, createAt2, createAt3, createAt4, avatar, btn })
-      .then(() => nav("/card"));
+      .then(() => nav("/admin/news"));
   };
 
   return (

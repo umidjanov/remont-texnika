@@ -154,7 +154,6 @@ export default function Blog2() {
               Компьютерный вирус. способы заражения и методы защиты
             </h1>
           </div>
-
           <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={kom2} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
