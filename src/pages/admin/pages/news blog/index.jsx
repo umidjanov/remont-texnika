@@ -51,9 +51,7 @@ export default function NewsBlog() {
                   <h3 className="text-center text-[12px]">
                     {product?.createAt}
                   </h3>
-                  <h3 className="text-center text-[12px]">
-                    {product?.btn}
-                  </h3>
+                  
                 </div>
                 {/* <h2>ID: {product?.id}</h2> */}
                 <div className="flex flex-col gap-4 ">

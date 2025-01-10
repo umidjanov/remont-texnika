@@ -5,32 +5,32 @@ import { Button } from "@material-tailwind/react";
 import NavbarDefault from "../../components/navbar";
 
 export default function News() {
-  const [products, setProducts] = useState([]);
+  const [news, setNews] = useState([]);
 
   useEffect(() => {
     instance
-      .get("/product")
+      .get("/news")
       .then((res) => {
-        setProducts(res.data);
+        setNews(res.data);
       })
       .catch((error) => {
-        console.error("Error fetching products:", error);
+        console.error("Error fetching news:", error);
       });
   }, []);
 
   const deleted = async (id) => {
     try {
-      await instance.delete(`/product/${id}`);
-      setProducts(products.filter((product) => product.id !== id));
+      await instance.delete(`/news/${id}`);
+      setNews(news.filter((news) => news.id !== id));
     } catch (error) {
-      console.error("Error deleting product:", error);
+      console.error("Error deleting news:", error);
     }
   };
 
   return (
-    <div className="bg-blue-gray-900 w-[100%] h-[100%] flex">
+    <div className="bg-blue-gray-900 w-[100%] h-[100vh] flex">
       <NavbarDefault />
-      <div className="flex flex-col ml-[250px]">
+      <div className="flex flex-col ml-[250px] bg-blue-gray-900">
         <div className="bg-[#050b1aef] text-white uppercase w-[1286px] fixed">
           <h1 className="pt-6 ml-[17px] p-3 w-full font-bold pl-[80px]">
             this is News page
@@ -38,30 +38,32 @@ export default function News() {
         </div>
         <div className="flex items-center justify-center flex-col gap-[20px] p-[30px] flex-wrap mt-[80px]">
           <div className="flex gap-[40px] px-[44px] flex-wrap">
-            {products?.map((product) => (
+            {news?.map((news) => (
               <div
-                key={product?.id}
-                className="shadow-2xl rounded-xl bg-white w-[250px] p-[20px] flex flex-col gap-[10px]"
+                key={news?.id}
+                className="shadow-2xl rounded-xl bg-white w-[250px] p-[20px] flex flex-col gap-[20px] items-center"
               >
-                <img src={product?.avatar} alt="" />
-                <div>
+                <img width="110px" src={news?.avatar} alt="" />
+                <div className="flex flex-col gap-[10px]">
                   <h1 className="text-center text-[22px] font-bold">
-                    {product?.name}
+                    {news?.name}
                   </h1>
                   <h3 className="text-center text-[12px]">
-                    {product?.createAt}
+                    {news?.createAt}
+                  </h3>
+                  <h3 className="text-center text-[17px] px-[20px] py-[8px] rounded-lg bg-[#DEDEDE]">
+                    {news?.btn}
                   </h3>
                 </div>
-                {/* <h2>ID: {product?.id}</h2> */}
-                <div className="flex flex-col gap-4 ">
-                  <Link to={`/admin/news/${product?.id}`}>
-                    <Button className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]  p-[10px]">
+                <div className="flex gap-[10px]">
+                  <Link to={`/admin/news/${news?.id}`}>
+                    <Button className="flex m-auto bg-[#E7742E] text-black border-[#E7742E] py-[10px]">
                       update
                     </Button>
                   </Link>
                   <Button
-                    className="flex m-auto bg-[#E7742E] py-[-6px] text-black border-[#E7742E]  p-[10px]"
-                    onClick={() => deleted(product?.id)}
+                    className="flex m-auto bg-[#E7742E] text-black border-[#E7742E] py-[10px]"
+                    onClick={() => deleted(news?.id)}
                   >
                     delete
                   </Button>

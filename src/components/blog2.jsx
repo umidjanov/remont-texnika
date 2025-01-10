@@ -131,61 +131,61 @@ export default function Blog2() {
         </div>
       </div>
 
-      <div>
-        <h1 className="flex text-center justify-center text-4xl mx-[710px] my-8 border-b-[3px] border-[#E7742E]">
+      <div className="flex flex-col gap-[40px] py-[40px]">
+        <h1 className="flex text-center justify-center text-4xl mx-[700px] border-b-[3px] border-[#E7742E]">
           БЛОГ
         </h1>
-        <div className=" flex gap-8 flex-wrap ml-[55px] px-[230px]">
-          <div className=" py-4 w-[300px]">
+        <div className=" flex gap-[50px] flex-wrap ml-[36px] px-[230px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={kom} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center">
               КАК ПРОДЛИТЬ ЖИЗНЬ НОУТБУКУ: 10 ПРАВИЛ ГРАМОТНОГО ИСПОЛЬЗОВАНИЯ{" "}
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={chas} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Что делать,если компьютер медленно работает{" "}
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={mik} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Компьютерный вирус. способы заражения и методы защиты
             </h1>
           </div>
 
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={kom2} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Система резервного копирования, что это?
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={kla} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ЧИСТКА НОУТБУКОВ
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={vod} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               Если пролили жидкость на ноутбук, что делать?
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={tex} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               ВОССТАНОВЛЕНИЕ УДАЛЕННЫХ ДАННЫХ
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={med} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               как часто надо проводить профилактику
             </h1>
           </div>
-          <div className=" py-4 w-[300px]">
+          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
             <img src={tru} alt="" />
             <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
               НАСТРОЙКА роутера и домашней сети

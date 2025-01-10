@@ -14,16 +14,16 @@ import { useEffect, useState } from "react";
 import { instance } from "./admin/utils/axios";
 
 export default function Home() {
-    const [products, setProducts] = useState([]);
+    const [news, setNews] = useState([]);
 
     useEffect(() => {
       instance
-        .get("/product")
+        .get("/news")
         .then((res) => {
-          setProducts(res.data);
+          setNews(res.data);
         })
         .catch((error) => {
-          console.error("Error fetching products:", error);
+          console.error("Error fetching news:", error);
         });
     }, []);
   
@@ -33,7 +33,7 @@ export default function Home() {
       <div className="flex flex-wrap gap-[40px] justify-center lg:mt-[250px] mb-[100px] lg:mx-[200px]">
         <div className="flex flex-wrap lg:mt-[500px] md:mt-[400px] mt-[500px] gap-[50px] justify-center">
           <Card name="name" createAt="sana" avatar="ava" />
-          <Card products={products} name="name" createAt="sana" avatar="ava" />
+          <Card news={news} name="name" createAt="sana" avatar="ava" />
         </div>
       </div>
       <Blok />
