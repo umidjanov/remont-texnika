@@ -1,33 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "./../media/white.png";
 import str from "./../media/Vector.png";
 import tg from "./../media/Telegram.png";
 import wch from "./../media/Whatsapp.png";
 import ins from "./../media/Instagram.png";
-import kom from "./../media/Komputer.png";
-import chas from "./../media/Chasi.png";
-import mik from "./../media/Microb.png";
-import kom2 from "./../media/Komputer2.png";
-import kla from "./../media/Klava.png";
-import vod from "./../media/Vodka.png";
-import tex from "./../media/Texnika.png";
-import med from "./../media/Mediki.png";
-import tru from "./../media/Trubi.png";
 import skr from "./../media/Scroll.png";
-import lok from "./../media/location.png";
-import eml from "./../media/email.png";
-import hou from "./../media/hours.png";
 import { Button, Checkbox, Input } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { instance } from "../pages/admin/utils/axios";
 
 export default function Blog2() {
-  const [isChecked, setIsChecked] = useState(false); // Checkbox holati
-  const [isChecked2, setIsChecked2] = useState(false); // Checkbox holati
+  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
   const [name, setName] = useState("");
   const [name2, setName2] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail2] = useState("");
   const [question, setQuestion2] = useState("");
+  const [newsblog, setNewsblog] = useState();
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -35,6 +25,17 @@ export default function Blog2() {
   const handleCheckboxChange2 = () => {
     setIsChecked2(!isChecked2);
   };
+
+  useEffect(() => {
+    instance
+      .get("/newsblog")
+      .then((res) => {
+        setNewsblog(res.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching news:", error);
+      });
+  }, []);
 
   const jonatis = () => {
     if (!isChecked) {
@@ -70,7 +71,6 @@ export default function Blog2() {
     setPhone("");
     setEmail2("");
     setQuestion2("");
-    // setEmail2(false);
 
     alert("заказ принят!");
   };
@@ -102,7 +102,9 @@ export default function Blog2() {
                   <Link to={"/"}>ГЛАВНАЯ</Link>
                 </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
-                <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">О НАС</button>
+                <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">
+                  О НАС
+                </button>
                 <div className="border-[2px] border-[#E7742E] h-[20px]"></div>
                 <button className="lg:text-[18px] md:text-[16px] hover:text-[#E7742E] hover:transition">
                   УСЛУГИ
@@ -135,60 +137,19 @@ export default function Blog2() {
         <h1 className="flex text-center justify-center text-4xl mx-[700px] border-b-[3px] border-[#E7742E]">
           БЛОГ
         </h1>
-        <div className=" flex gap-[50px] flex-wrap ml-[36px] px-[230px]">
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={kom} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center">
-              КАК ПРОДЛИТЬ ЖИЗНЬ НОУТБУКУ: 10 ПРАВИЛ ГРАМОТНОГО ИСПОЛЬЗОВАНИЯ{" "}
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={chas} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              Что делать,если компьютер медленно работает{" "}
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={mik} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              Компьютерный вирус. способы заражения и методы защиты
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={kom2} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              Система резервного копирования, что это?
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={kla} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              ЧИСТКА НОУТБУКОВ
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={vod} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              Если пролили жидкость на ноутбук, что делать?
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={tex} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              ВОССТАНОВЛЕНИЕ УДАЛЕННЫХ ДАННЫХ
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={med} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              как часто надо проводить профилактику
-            </h1>
-          </div>
-          <div className="p-4 w-[300px] border-2 border-black cursor-pointer bg-[#eaeaea]">
-            <img src={tru} alt="" />
-            <h1 className="py-3 ml-[20px] w-[230px] text-center uppercase">
-              НАСТРОЙКА роутера и домашней сети
-            </h1>
+        <div className=" flex gap-[50px] flex-wrap items-center px-[230px]">
+          <div className="flex items-center justify-center">
+            <div className="flex gap-[40px] flex-wrap justify-center">
+              {newsblog?.map((newsblog) => (
+                <div
+                  key={newsblog?.id}
+                  className="shadow-2xl rounded-xl bg-white w-[320px] h-[350px] p-[20px] flex flex-col gap-[10px]"
+                >
+                  <img src={newsblog?.avatar} alt="" />
+                  <h3 className="text-center text-[18px]">{newsblog?.desk}</h3>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <img className="m-auto w-[100px]" src={skr} alt="" />
