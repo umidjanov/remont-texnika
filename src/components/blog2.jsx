@@ -9,6 +9,22 @@ import { Button, Checkbox, Input } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import { instance } from "../pages/admin/utils/axios";
 
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 650,
+  height: 300,
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 4,
+};
+
 export default function Blog2() {
   const [isChecked, setIsChecked] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -75,6 +91,10 @@ export default function Blog2() {
     alert("заказ принят!");
   };
 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <div className="bg-[#0B1427] h-[140px]">
@@ -139,14 +159,17 @@ export default function Blog2() {
         </h1>
         <div className=" flex gap-[50px] flex-wrap items-center px-[230px]">
           <div className="flex items-center justify-center">
-            <div className="flex gap-[40px] flex-wrap justify-center">
+            <div
+              onClick={handleOpen}
+              className="flex gap-[40px] flex-wrap justify-center cursor-pointer"
+            >
               {newsblog?.map((newsblog) => (
                 <div
                   key={newsblog?.id}
                   className="shadow-2xl rounded-xl bg-white w-[320px] h-[350px] p-[20px] flex flex-col gap-[10px]"
                 >
                   <img src={newsblog?.avatar} alt="" />
-                  <h3 className="text-center text-[18px]">{newsblog?.desk}</h3>
+                  <h3 className="text-center uppercase text-[18px]">{newsblog?.desk}</h3>
                 </div>
               ))}
             </div>
@@ -332,6 +355,31 @@ export default function Blog2() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style} className="rounded-md">
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Siz bu yerdan card xaqida malumotga ega bo'lishingiz mumkin
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              Уход за компьютером: Wi-Fi, вирусы, клавиатура и восстановление
+              памяти Слабый сигнал от роутера. Перегруженная сеть. Использование
+              старого оборудования. Влияние помех (стены, другие устройства).
+              Компьютер работает медленно. Неожиданное появление рекламы. Сбой
+              программ. Решение: Установите антивирусное ПО (например,
+              Kaspersky, ESET, Avast). Отключите клавиатуру перед чисткой.
+Используйте пылесос или баллончик со сжатым воздухом для удаления пыли.
+Протрите клавиши мягкой тканью с небольшим количеством спирта.
+            </Typography>
+          </Box>
+        </Modal>
       </div>
     </div>
   );
